@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<!DOCTYPE aida SYSTEM "http://aida.freehep.org/schemas/3.3/aida.dtd">
+<aida version="3.3">
+  <implementation version="1.1" package="Rivet"/>
+  <dataPointSet name="d03-x01-y01" dimension="2"
+      path="/REF/CMS_EWK_12_XXX" title="Unfold Unfolding Matrix in \ of jets + Z">
+    <annotation>
+      <item key="Title" value="Unfold Unfolding Matrix in \ of jets + Z" sticky="true"/>
+      <item key="AidaPath" value="/REF/CMS_EWK_12_XXX/d03-x01-y01" sticky="true"/>
+    </annotation>
+    <dataPoint>
+      <measurement errorPlus="5.000000e-01" value="5.000000e-01" errorMinus="5.000000e-01"/>
+      <measurement errorPlus="3.059231e+03" value="1.471983e+06" errorMinus="3.059231e+03"/>
+    </dataPoint>
+    <dataPoint>
+      <measurement errorPlus="5.000000e-01" value="1.500000e+00" errorMinus="5.000000e-01"/>
+      <measurement errorPlus="2.025903e+03" value="2.145166e+05" errorMinus="2.025903e+03"/>
+    </dataPoint>
+    <dataPoint>
+      <measurement errorPlus="5.000000e-01" value="2.500000e+00" errorMinus="5.000000e-01"/>
+      <measurement errorPlus="8.319810e+02" value="5.061866e+04" errorMinus="8.319810e+02"/>
+    </dataPoint>
+    <dataPoint>
+      <measurement errorPlus="5.000000e-01" value="3.500000e+00" errorMinus="5.000000e-01"/>
+      <measurement errorPlus="3.918413e+02" value="1.102345e+04" errorMinus="3.918413e+02"/>
+    </dataPoint>
+    <dataPoint>
+      <measurement errorPlus="5.000000e-01" value="4.500000e+00" errorMinus="5.000000e-01"/>
+      <measurement errorPlus="2.124213e+02" value="2.358402e+03" errorMinus="2.124213e+02"/>
+    </dataPoint>
+    <dataPoint>
+      <measurement errorPlus="5.000000e-01" value="5.500000e+00" errorMinus="5.000000e-01"/>
+      <measurement errorPlus="6.592073e+01" value="5.103420e+02" errorMinus="6.592073e+01"/>
+    </dataPoint>
+  </dataPointSet>
+</aida>
