@@ -288,6 +288,16 @@ namespace Rivet {
       FourMomentum Z_momentum_ele(add(ele_dres.p_part,pos_dres.p_part));
       FourMomentum Z_momentum_muon(add(muon_dres.p_part,antimuon_dres.p_part));
 
+      if(Z_momentum_ele.mass2()<0){
+        cout << "Z_mass_ele minore di 0" << endl;
+        vetoEvent;
+      }
+
+      if(Z_momentum_muon.mass2()<0){
+        cout << "Z_mass_muon minore di 0" << endl;
+        vetoEvent;
+      }
+
 
       // Z mass window
       if((Z_momentum_ele.mass()>71. && Z_momentum_ele.mass()<111.) && (!ele_dres.lepton_photon.empty() && !pos_dres.lepton_photon.empty())){
