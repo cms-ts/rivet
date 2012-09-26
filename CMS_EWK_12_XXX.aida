@@ -3,9 +3,9 @@
 <aida version="3.3">
   <implementation version="1.1" package="Rivet"/>
   <dataPointSet name="d13-x01-y01" dimension="2"
-      path="/REF/CMS_EWK_12_XXX" title="Third leading jet eta diff xsec distribution. Data unfolding Svd method with K=15">
+      path="/REF/CMS_EWK_12_XXX" title="Third leading jet eta diff xsec distribution.">
     <annotation>
-      <item key="Title" value="Third leading jet eta diff xsec distribution. Data unfolding Svd method with K=15" sticky="true"/>
+      <item key="Title" value="Third leading jet eta diff xsec distribution." sticky="true"/>
       <item key="AidaPath" value="/REF/CMS_EWK_12_XXX/d13-x01-y01" sticky="true"/>
     </annotation>
     <dataPoint>
@@ -74,9 +74,9 @@
     </dataPoint>
   </dataPointSet>
   <dataPointSet name="d09-x01-y01" dimension="2"
-      path="/REF/CMS_EWK_12_XXX" title="Third leading jet pT diff xsec distribution. Data unfolding Svd method with K=6">
+      path="/REF/CMS_EWK_12_XXX" title="Third leading jet pT diff xsec distribution.">
     <annotation>
-      <item key="Title" value="Third leading jet pT diff xsec distribution. Data unfolding Svd method with K=6" sticky="true"/>
+      <item key="Title" value="Third leading jet pT diff xsec distribution." sticky="true"/>
       <item key="AidaPath" value="/REF/CMS_EWK_12_XXX/d09-x01-y01" sticky="true"/>
     </annotation>
     <dataPoint>
@@ -113,9 +113,9 @@
     </dataPoint>
   </dataPointSet>
   <dataPointSet name="d06-x01-y01" dimension="2"
-      path="/REF/CMS_EWK_12_XXX" title="Leading jet pT diff xsec distribution. Data unfolding Svd method with K=11">
+      path="/REF/CMS_EWK_12_XXX" title="Leading jet pT diff xsec distribution.">
     <annotation>
-      <item key="Title" value="Leading jet pT diff xsec distribution. Data unfolding Svd method with K=11" sticky="true"/>
+      <item key="Title" value="Leading jet pT diff xsec distribution." sticky="true"/>
       <item key="AidaPath" value="/REF/CMS_EWK_12_XXX/d06-x01-y01" sticky="true"/>
     </annotation>
     <dataPoint>
@@ -180,9 +180,9 @@
     </dataPoint>
   </dataPointSet>
   <dataPointSet name="d10-x01-y01" dimension="2"
-      path="/REF/CMS_EWK_12_XXX" title="Fourth leading jet pT diff xsec distribution. Data unfolding Svd method with K=3">
+      path="/REF/CMS_EWK_12_XXX" title="Fourth leading jet pT diff xsec distribution.">
     <annotation>
-      <item key="Title" value="Fourth leading jet pT diff xsec distribution. Data unfolding Svd method with K=3" sticky="true"/>
+      <item key="Title" value="Fourth leading jet pT diff xsec distribution." sticky="true"/>
       <item key="AidaPath" value="/REF/CMS_EWK_12_XXX/d10-x01-y01" sticky="true"/>
     </annotation>
     <dataPoint>
@@ -215,9 +215,9 @@
     </dataPoint>
   </dataPointSet>
   <dataPointSet name="d18-x01-y01" dimension="2"
-      path="/REF/CMS_EWK_12_XXX" title="Fourth leading jet eta diff xsec distribution. Data unfolding Svd method with K=11">
+      path="/REF/CMS_EWK_12_XXX" title="Fourth leading jet eta diff xsec distribution.">
     <annotation>
-      <item key="Title" value="Fourth leading jet eta diff xsec distribution. Data unfolding Svd method with K=11" sticky="true"/>
+      <item key="Title" value="Fourth leading jet eta diff xsec distribution." sticky="true"/>
       <item key="AidaPath" value="/REF/CMS_EWK_12_XXX/d18-x01-y01" sticky="true"/>
     </annotation>
     <dataPoint>
@@ -270,9 +270,9 @@
     </dataPoint>
   </dataPointSet>
   <dataPointSet name="d01-x01-y01" dimension="2"
-      path="/REF/CMS_EWK_12_XXX" title="Leading jet pT diff xsec distribution. Data unfolding Svd method with K=11">
+      path="/REF/CMS_EWK_12_XXX" title="Leading jet pT diff xsec distribution.">
     <annotation>
-      <item key="Title" value="Leading jet pT diff xsec distribution. Data unfolding Svd method with K=11" sticky="true"/>
+      <item key="Title" value="Leading jet pT diff xsec distribution." sticky="true"/>
       <item key="AidaPath" value="/REF/CMS_EWK_12_XXX/d01-x01-y01" sticky="true"/>
     </annotation>
     <dataPoint>
@@ -337,9 +337,9 @@
     </dataPoint>
   </dataPointSet>
   <dataPointSet name="d07-x01-y01" dimension="2"
-      path="/REF/CMS_EWK_12_XXX" title="Second leading jet pT diff xsec distribution. Data unfolding Svd method with K=8">
+      path="/REF/CMS_EWK_12_XXX" title="Second leading jet pT diff xsec distribution.">
     <annotation>
-      <item key="Title" value="Second leading jet pT diff xsec distribution. Data unfolding Svd method with K=8" sticky="true"/>
+      <item key="Title" value="Second leading jet pT diff xsec distribution." sticky="true"/>
       <item key="AidaPath" value="/REF/CMS_EWK_12_XXX/d07-x01-y01" sticky="true"/>
     </annotation>
     <dataPoint>
@@ -384,9 +384,9 @@
     </dataPoint>
   </dataPointSet>
   <dataPointSet name="d14-x01-y01" dimension="2"
-      path="/REF/CMS_EWK_12_XXX" title="Fourth leading jet eta diff xsec distribution. Data unfolding Svd method with K=11">
+      path="/REF/CMS_EWK_12_XXX" title="Fourth leading jet eta diff xsec distribution.">
     <annotation>
-      <item key="Title" value="Fourth leading jet eta diff xsec distribution. Data unfolding Svd method with K=11" sticky="true"/>
+      <item key="Title" value="Fourth leading jet eta diff xsec distribution." sticky="true"/>
       <item key="AidaPath" value="/REF/CMS_EWK_12_XXX/d14-x01-y01" sticky="true"/>
     </annotation>
     <dataPoint>
@@ -439,9 +439,9 @@
     </dataPoint>
   </dataPointSet>
   <dataPointSet name="d11-x01-y01" dimension="2"
-      path="/REF/CMS_EWK_12_XXX" title="Leading jet eta diff xsec distribution. Data unfolding Svd method with K=20">
+      path="/REF/CMS_EWK_12_XXX" title="Leading jet eta diff xsec distribution.">
     <annotation>
-      <item key="Title" value="Leading jet eta diff xsec distribution. Data unfolding Svd method with K=20" sticky="true"/>
+      <item key="Title" value="Leading jet eta diff xsec distribution." sticky="true"/>
       <item key="AidaPath" value="/REF/CMS_EWK_12_XXX/d11-x01-y01" sticky="true"/>
     </annotation>
     <dataPoint>
@@ -573,9 +573,9 @@
     </dataPoint>
   </dataPointSet>
   <dataPointSet name="d17-x01-y01" dimension="2"
-      path="/REF/CMS_EWK_12_XXX" title="Third leading jet eta diff xsec distribution. Data unfolding Svd method with K=15">
+      path="/REF/CMS_EWK_12_XXX" title="Third leading jet eta diff xsec distribution.">
     <annotation>
-      <item key="Title" value="Third leading jet eta diff xsec distribution. Data unfolding Svd method with K=15" sticky="true"/>
+      <item key="Title" value="Third leading jet eta diff xsec distribution." sticky="true"/>
       <item key="AidaPath" value="/REF/CMS_EWK_12_XXX/d17-x01-y01" sticky="true"/>
     </annotation>
     <dataPoint>
@@ -644,9 +644,9 @@
     </dataPoint>
   </dataPointSet>
   <dataPointSet name="d12-x01-y01" dimension="2"
-      path="/REF/CMS_EWK_12_XXX" title="Second leading jet eta diff xsec distribution. Data unfolding Svd method with K=19">
+      path="/REF/CMS_EWK_12_XXX" title="Second leading jet eta diff xsec distribution.">
     <annotation>
-      <item key="Title" value="Second leading jet eta diff xsec distribution. Data unfolding Svd method with K=19" sticky="true"/>
+      <item key="Title" value="Second leading jet eta diff xsec distribution." sticky="true"/>
       <item key="AidaPath" value="/REF/CMS_EWK_12_XXX/d12-x01-y01" sticky="true"/>
     </annotation>
     <dataPoint>
@@ -731,9 +731,9 @@
     </dataPoint>
   </dataPointSet>
   <dataPointSet name="d05-x01-y01" dimension="2"
-      path="/REF/CMS_EWK_12_XXX" title="Fourth leading jet pT diff xsec distribution. Data unfolding Svd method with K=3">
+      path="/REF/CMS_EWK_12_XXX" title="Fourth leading jet pT diff xsec distribution.">
     <annotation>
-      <item key="Title" value="Fourth leading jet pT diff xsec distribution. Data unfolding Svd method with K=3" sticky="true"/>
+      <item key="Title" value="Fourth leading jet pT diff xsec distribution." sticky="true"/>
       <item key="AidaPath" value="/REF/CMS_EWK_12_XXX/d05-x01-y01" sticky="true"/>
     </annotation>
     <dataPoint>
@@ -766,9 +766,9 @@
     </dataPoint>
   </dataPointSet>
   <dataPointSet name="d02-x01-y01" dimension="2"
-      path="/REF/CMS_EWK_12_XXX" title="Second leading jet pT diff xsec distribution. Data unfolding Svd method with K=8">
+      path="/REF/CMS_EWK_12_XXX" title="Second leading jet pT diff xsec distribution.">
     <annotation>
-      <item key="Title" value="Second leading jet pT diff xsec distribution. Data unfolding Svd method with K=8" sticky="true"/>
+      <item key="Title" value="Second leading jet pT diff xsec distribution." sticky="true"/>
       <item key="AidaPath" value="/REF/CMS_EWK_12_XXX/d02-x01-y01" sticky="true"/>
     </annotation>
     <dataPoint>
@@ -813,9 +813,9 @@
     </dataPoint>
   </dataPointSet>
   <dataPointSet name="d15-x01-y01" dimension="2"
-      path="/REF/CMS_EWK_12_XXX" title="Leading jet eta diff xsec distribution. Data unfolding Svd method with K=20">
+      path="/REF/CMS_EWK_12_XXX" title="Leading jet eta diff xsec distribution.">
     <annotation>
-      <item key="Title" value="Leading jet eta diff xsec distribution. Data unfolding Svd method with K=20" sticky="true"/>
+      <item key="Title" value="Leading jet eta diff xsec distribution." sticky="true"/>
       <item key="AidaPath" value="/REF/CMS_EWK_12_XXX/d15-x01-y01" sticky="true"/>
     </annotation>
     <dataPoint>
@@ -947,9 +947,9 @@
     </dataPoint>
   </dataPointSet>
   <dataPointSet name="d16-x01-y01" dimension="2"
-      path="/REF/CMS_EWK_12_XXX" title="Second leading jet eta diff xsec distribution. Data unfolding Svd method with K=19">
+      path="/REF/CMS_EWK_12_XXX" title="Second leading jet eta diff xsec distribution.">
     <annotation>
-      <item key="Title" value="Second leading jet eta diff xsec distribution. Data unfolding Svd method with K=19" sticky="true"/>
+      <item key="Title" value="Second leading jet eta diff xsec distribution." sticky="true"/>
       <item key="AidaPath" value="/REF/CMS_EWK_12_XXX/d16-x01-y01" sticky="true"/>
     </annotation>
     <dataPoint>
@@ -1034,9 +1034,9 @@
     </dataPoint>
   </dataPointSet>
   <dataPointSet name="d04-x01-y01" dimension="2"
-      path="/REF/CMS_EWK_12_XXX" title="Third leading jet pT diff xsec distribution. Data unfolding Svd method with K=6">
+      path="/REF/CMS_EWK_12_XXX" title="Third leading jet pT diff xsec distribution.">
     <annotation>
-      <item key="Title" value="Third leading jet pT diff xsec distribution. Data unfolding Svd method with K=6" sticky="true"/>
+      <item key="Title" value="Third leading jet pT diff xsec distribution." sticky="true"/>
       <item key="AidaPath" value="/REF/CMS_EWK_12_XXX/d04-x01-y01" sticky="true"/>
     </annotation>
     <dataPoint>
@@ -1073,381 +1073,347 @@
     </dataPoint>
   </dataPointSet>
   <dataPointSet name="d19-x01-y01" dimension="2"
-      path="/REF/CMS_EWK_12_XXX" title="Leading jet HT diff xsec distribution. Data unfolding Svd method with K=6">
+      path="/REF/CMS_EWK_12_XXX" title="Leading jet HT diff xsec distribution.">
     <annotation>
-      <item key="Title" value="Leading jet HT diff xsec distribution. Data unfolding Svd method with K=6" sticky="true"/>
+      <item key="Title" value="Leading jet HT diff xsec distribution." sticky="true"/>
       <item key="AidaPath" value="/REF/CMS_EWK_12_XXX/d19-x01-y01" sticky="true"/>
     </annotation>
     <dataPoint>
-      <measurement errorPlus="2.500000e+01" value="3.000000e+01" errorMinus="2.500000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
+      <measurement errorPlus="2.500000e+01" value="5.500000e+01" errorMinus="2.500000e+01"/>
+      <measurement errorPlus="2.083475e-03" value="7.368798e-01" errorMinus="2.083475e-03"/>
     </dataPoint>
     <dataPoint>
-      <measurement errorPlus="2.500000e+01" value="8.000000e+01" errorMinus="2.500000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
+      <measurement errorPlus="2.500000e+01" value="1.050000e+02" errorMinus="2.500000e+01"/>
+      <measurement errorPlus="9.595815e-04" value="1.563090e-01" errorMinus="9.595815e-04"/>
     </dataPoint>
     <dataPoint>
-      <measurement errorPlus="2.500000e+01" value="1.300000e+02" errorMinus="2.500000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
+      <measurement errorPlus="2.500000e+01" value="1.550000e+02" errorMinus="2.500000e+01"/>
+      <measurement errorPlus="5.749749e-04" value="5.612004e-02" errorMinus="5.749749e-04"/>
     </dataPoint>
     <dataPoint>
-      <measurement errorPlus="2.500000e+01" value="1.800000e+02" errorMinus="2.500000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
+      <measurement errorPlus="2.500000e+01" value="2.050000e+02" errorMinus="2.500000e+01"/>
+      <measurement errorPlus="3.775305e-04" value="2.419492e-02" errorMinus="3.775305e-04"/>
     </dataPoint>
     <dataPoint>
-      <measurement errorPlus="2.500000e+01" value="2.300000e+02" errorMinus="2.500000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
+      <measurement errorPlus="2.500000e+01" value="2.550000e+02" errorMinus="2.500000e+01"/>
+      <measurement errorPlus="2.659809e-04" value="1.200939e-02" errorMinus="2.659809e-04"/>
     </dataPoint>
     <dataPoint>
-      <measurement errorPlus="2.500000e+01" value="2.800000e+02" errorMinus="2.500000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
+      <measurement errorPlus="2.500000e+01" value="3.050000e+02" errorMinus="2.500000e+01"/>
+      <measurement errorPlus="1.858145e-04" value="5.861104e-03" errorMinus="1.858145e-04"/>
     </dataPoint>
     <dataPoint>
-      <measurement errorPlus="2.500000e+01" value="3.300000e+02" errorMinus="2.500000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
+      <measurement errorPlus="2.500000e+01" value="3.550000e+02" errorMinus="2.500000e+01"/>
+      <measurement errorPlus="1.408278e-04" value="3.366643e-03" errorMinus="1.408278e-04"/>
     </dataPoint>
     <dataPoint>
-      <measurement errorPlus="2.500000e+01" value="3.800000e+02" errorMinus="2.500000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
+      <measurement errorPlus="2.500000e+01" value="4.050000e+02" errorMinus="2.500000e+01"/>
+      <measurement errorPlus="1.103151e-04" value="2.065807e-03" errorMinus="1.103151e-04"/>
     </dataPoint>
     <dataPoint>
-      <measurement errorPlus="2.500000e+01" value="4.300000e+02" errorMinus="2.500000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
+      <measurement errorPlus="2.500000e+01" value="4.550000e+02" errorMinus="2.500000e+01"/>
+      <measurement errorPlus="8.792886e-05" value="1.312451e-03" errorMinus="8.792886e-05"/>
     </dataPoint>
     <dataPoint>
-      <measurement errorPlus="2.500000e+01" value="4.800000e+02" errorMinus="2.500000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
+      <measurement errorPlus="2.500000e+01" value="5.050000e+02" errorMinus="2.500000e+01"/>
+      <measurement errorPlus="7.385566e-05" value="9.259505e-04" errorMinus="7.385566e-05"/>
     </dataPoint>
     <dataPoint>
-      <measurement errorPlus="2.500000e+01" value="5.300000e+02" errorMinus="2.500000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
+      <measurement errorPlus="2.500000e+01" value="5.550000e+02" errorMinus="2.500000e+01"/>
+      <measurement errorPlus="5.797716e-05" value="5.706029e-04" errorMinus="5.797716e-05"/>
     </dataPoint>
     <dataPoint>
-      <measurement errorPlus="2.500000e+01" value="5.800000e+02" errorMinus="2.500000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
-    </dataPoint>
-    <dataPoint>
-      <measurement errorPlus="2.500000e+01" value="6.300000e+02" errorMinus="2.500000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
+      <measurement errorPlus="2.500000e+01" value="6.050000e+02" errorMinus="2.500000e+01"/>
+      <measurement errorPlus="4.758186e-05" value="3.843288e-04" errorMinus="4.758186e-05"/>
     </dataPoint>
   </dataPointSet>
   <dataPointSet name="d23-x01-y01" dimension="2"
-      path="/REF/CMS_EWK_12_XXX" title="Leading jet HT diff xsec distribution. Data unfolding Svd method with K=6">
+      path="/REF/CMS_EWK_12_XXX" title="Leading jet HT diff xsec distribution.">
     <annotation>
-      <item key="Title" value="Leading jet HT diff xsec distribution. Data unfolding Svd method with K=6" sticky="true"/>
+      <item key="Title" value="Leading jet HT diff xsec distribution." sticky="true"/>
       <item key="AidaPath" value="/REF/CMS_EWK_12_XXX/d19-x01-y01" sticky="true"/>
     </annotation>
     <dataPoint>
-      <measurement errorPlus="2.500000e+01" value="3.000000e+01" errorMinus="2.500000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
+      <measurement errorPlus="2.500000e+01" value="5.500000e+01" errorMinus="2.500000e+01"/>
+      <measurement errorPlus="1.671578e-03" value="7.342311e-01" errorMinus="1.671578e-03"/>
     </dataPoint>
     <dataPoint>
-      <measurement errorPlus="2.500000e+01" value="8.000000e+01" errorMinus="2.500000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
+      <measurement errorPlus="2.500000e+01" value="1.050000e+02" errorMinus="2.500000e+01"/>
+      <measurement errorPlus="7.794170e-04" value="1.596317e-01" errorMinus="7.794170e-04"/>
     </dataPoint>
     <dataPoint>
-      <measurement errorPlus="2.500000e+01" value="1.300000e+02" errorMinus="2.500000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
+      <measurement errorPlus="2.500000e+01" value="1.550000e+02" errorMinus="2.500000e+01"/>
+      <measurement errorPlus="4.615726e-04" value="5.598342e-02" errorMinus="4.615726e-04"/>
     </dataPoint>
     <dataPoint>
-      <measurement errorPlus="2.500000e+01" value="1.800000e+02" errorMinus="2.500000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
+      <measurement errorPlus="2.500000e+01" value="2.050000e+02" errorMinus="2.500000e+01"/>
+      <measurement errorPlus="3.018188e-04" value="2.393712e-02" errorMinus="3.018188e-04"/>
     </dataPoint>
     <dataPoint>
-      <measurement errorPlus="2.500000e+01" value="2.300000e+02" errorMinus="2.500000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
+      <measurement errorPlus="2.500000e+01" value="2.550000e+02" errorMinus="2.500000e+01"/>
+      <measurement errorPlus="2.139771e-04" value="1.203133e-02" errorMinus="2.139771e-04"/>
     </dataPoint>
     <dataPoint>
-      <measurement errorPlus="2.500000e+01" value="2.800000e+02" errorMinus="2.500000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
+      <measurement errorPlus="2.500000e+01" value="3.050000e+02" errorMinus="2.500000e+01"/>
+      <measurement errorPlus="1.496737e-04" value="5.886681e-03" errorMinus="1.496737e-04"/>
     </dataPoint>
     <dataPoint>
-      <measurement errorPlus="2.500000e+01" value="3.300000e+02" errorMinus="2.500000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
+      <measurement errorPlus="2.500000e+01" value="3.550000e+02" errorMinus="2.500000e+01"/>
+      <measurement errorPlus="1.133128e-04" value="3.373939e-03" errorMinus="1.133128e-04"/>
     </dataPoint>
     <dataPoint>
-      <measurement errorPlus="2.500000e+01" value="3.800000e+02" errorMinus="2.500000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
+      <measurement errorPlus="2.500000e+01" value="4.050000e+02" errorMinus="2.500000e+01"/>
+      <measurement errorPlus="8.694412e-05" value="1.986368e-03" errorMinus="8.694412e-05"/>
     </dataPoint>
     <dataPoint>
-      <measurement errorPlus="2.500000e+01" value="4.300000e+02" errorMinus="2.500000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
+      <measurement errorPlus="2.500000e+01" value="4.550000e+02" errorMinus="2.500000e+01"/>
+      <measurement errorPlus="7.010689e-05" value="1.291519e-03" errorMinus="7.010689e-05"/>
     </dataPoint>
     <dataPoint>
-      <measurement errorPlus="2.500000e+01" value="4.800000e+02" errorMinus="2.500000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
+      <measurement errorPlus="2.500000e+01" value="5.050000e+02" errorMinus="2.500000e+01"/>
+      <measurement errorPlus="5.685294e-05" value="8.493469e-04" errorMinus="5.685294e-05"/>
     </dataPoint>
     <dataPoint>
-      <measurement errorPlus="2.500000e+01" value="5.300000e+02" errorMinus="2.500000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
+      <measurement errorPlus="2.500000e+01" value="5.550000e+02" errorMinus="2.500000e+01"/>
+      <measurement errorPlus="4.278406e-05" value="4.809981e-04" errorMinus="4.278406e-05"/>
     </dataPoint>
     <dataPoint>
-      <measurement errorPlus="2.500000e+01" value="5.800000e+02" errorMinus="2.500000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
-    </dataPoint>
-    <dataPoint>
-      <measurement errorPlus="2.500000e+01" value="6.300000e+02" errorMinus="2.500000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
+      <measurement errorPlus="2.500000e+01" value="6.050000e+02" errorMinus="2.500000e+01"/>
+      <measurement errorPlus="3.470662e-05" value="3.165220e-04" errorMinus="3.470662e-05"/>
     </dataPoint>
   </dataPointSet>
   <dataPointSet name="d20-x01-y01" dimension="2"
-      path="/REF/CMS_EWK_12_XXX" title="Second leading jet HT diff xsec distribution. Data unfolding Svd method with K=6">
+      path="/REF/CMS_EWK_12_XXX" title="Second leading jet HT diff xsec distribution.">
     <annotation>
-      <item key="Title" value="Second leading jet HT diff xsec distribution. Data unfolding Svd method with K=6" sticky="true"/>
+      <item key="Title" value="Second leading jet HT diff xsec distribution." sticky="true"/>
       <item key="AidaPath" value="/REF/CMS_EWK_12_XXX/d20-x01-y01" sticky="true"/>
     </annotation>
     <dataPoint>
-      <measurement errorPlus="2.375000e+01" value="6.000000e+01" errorMinus="2.375000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
+      <measurement errorPlus="2.375000e+01" value="8.375000e+01" errorMinus="2.375000e+01"/>
+      <measurement errorPlus="3.460904e-03" value="4.067289e-01" errorMinus="3.460904e-03"/>
     </dataPoint>
     <dataPoint>
-      <measurement errorPlus="2.375000e+01" value="1.075000e+02" errorMinus="2.375000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
+      <measurement errorPlus="2.375000e+01" value="1.312500e+02" errorMinus="2.375000e+01"/>
+      <measurement errorPlus="2.934020e-03" value="2.923157e-01" errorMinus="2.934020e-03"/>
     </dataPoint>
     <dataPoint>
-      <measurement errorPlus="2.375000e+01" value="1.550000e+02" errorMinus="2.375000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
+      <measurement errorPlus="2.375000e+01" value="1.787500e+02" errorMinus="2.375000e+01"/>
+      <measurement errorPlus="1.983777e-03" value="1.336324e-01" errorMinus="1.983777e-03"/>
     </dataPoint>
     <dataPoint>
-      <measurement errorPlus="2.375000e+01" value="2.02500e+02" errorMinus="2.375000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
+      <measurement errorPlus="2.375000e+01" value="2.262500e+02" errorMinus="2.375000e+01"/>
+      <measurement errorPlus="1.458677e-03" value="7.225108e-02" errorMinus="1.458677e-03"/>
     </dataPoint>
     <dataPoint>
-      <measurement errorPlus="2.375000e+01" value="2.500000e+02" errorMinus="2.375000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
+      <measurement errorPlus="2.375000e+01" value="2.737500e+02" errorMinus="2.375000e+01"/>
+      <measurement errorPlus="1.065290e-03" value="3.853553e-02" errorMinus="1.065290e-03"/>
     </dataPoint>
     <dataPoint>
-      <measurement errorPlus="2.375000e+01" value="2.975000e+02" errorMinus="2.375000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
+      <measurement errorPlus="2.375000e+01" value="3.212500e+02" errorMinus="2.375000e+01"/>
+      <measurement errorPlus="7.814637e-04" value="2.073688e-02" errorMinus="7.814637e-04"/>
     </dataPoint>
     <dataPoint>
-      <measurement errorPlus="2.375000e+01" value="3.450000e+02" errorMinus="2.375000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
+      <measurement errorPlus="2.375000e+01" value="3.687500e+02" errorMinus="2.375000e+01"/>
+      <measurement errorPlus="6.272424e-04" value="1.335970e-02" errorMinus="6.272424e-04"/>
     </dataPoint>
     <dataPoint>
-      <measurement errorPlus="2.375000e+01" value="3.925000e+02" errorMinus="2.375000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
+      <measurement errorPlus="2.375000e+01" value="4.162500e+02" errorMinus="2.375000e+01"/>
+      <measurement errorPlus="5.058402e-04" value="8.688656e-03" errorMinus="5.058402e-04"/>
     </dataPoint>
     <dataPoint>
-      <measurement errorPlus="2.375000e+01" value="4.400000e+02" errorMinus="2.375000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
+      <measurement errorPlus="2.375000e+01" value="4.637500e+02" errorMinus="2.375000e+01"/>
+      <measurement errorPlus="4.097718e-04" value="5.701774e-03" errorMinus="4.097718e-04"/>
     </dataPoint>
     <dataPoint>
-      <measurement errorPlus="2.375000e+01" value="4.875000e+02" errorMinus="2.375000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
+      <measurement errorPlus="2.375000e+01" value="5.112500e+02" errorMinus="2.375000e+01"/>
+      <measurement errorPlus="3.283828e-04" value="3.661733e-03" errorMinus="3.283828e-04"/>
     </dataPoint>
     <dataPoint>
-      <measurement errorPlus="2.375000e+01" value="5.350000e+02" errorMinus="2.375000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
+      <measurement errorPlus="2.375000e+01" value="5.587500e+02" errorMinus="2.375000e+01"/>
+      <measurement errorPlus="2.712128e-04" value="2.497735e-03" errorMinus="2.712128e-04"/>
     </dataPoint>
     <dataPoint>
-      <measurement errorPlus="2.375000e+01" value="5.825000e+02" errorMinus="2.375000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
-    </dataPoint>
-    <dataPoint>
-      <measurement errorPlus="2.375000e+01" value="6.300000e+02" errorMinus="2.375000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
+      <measurement errorPlus="2.375000e+01" value="6.062500e+02" errorMinus="2.375000e+01"/>
+      <measurement errorPlus="2.359194e-04" value="1.889962e-03" errorMinus="2.359194e-04"/>
     </dataPoint>
   </dataPointSet>
   <dataPointSet name="d24-x01-y01" dimension="2"
-      path="/REF/CMS_EWK_12_XXX" title="Second leading jet HT diff xsec distribution. Data unfolding Svd method with K=6">
+      path="/REF/CMS_EWK_12_XXX" title="Second leading jet HT diff xsec distribution.">
     <annotation>
-      <item key="Title" value="Second leading jet HT diff xsec distribution. Data unfolding Svd method with K=6" sticky="true"/>
+      <item key="Title" value="Second leading jet HT diff xsec distribution." sticky="true"/>
       <item key="AidaPath" value="/REF/CMS_EWK_12_XXX/d24-x01-y01" sticky="true"/>
     </annotation>
     <dataPoint>
-      <measurement errorPlus="2.375000e+01" value="6.000000e+01" errorMinus="2.375000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
+      <measurement errorPlus="2.375000e+01" value="8.375000e+01" errorMinus="2.375000e+01"/>
+      <measurement errorPlus="2.787420e-03" value="4.089651e-01" errorMinus="2.787420e-03"/>
     </dataPoint>
     <dataPoint>
-      <measurement errorPlus="2.375000e+01" value="1.075000e+02" errorMinus="2.375000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
+      <measurement errorPlus="2.375000e+01" value="1.312500e+02" errorMinus="2.375000e+01"/>
+      <measurement errorPlus="2.321425e-03" value="2.836552e-01" errorMinus="2.321425e-03"/>
     </dataPoint>
     <dataPoint>
-      <measurement errorPlus="2.375000e+01" value="1.550000e+02" errorMinus="2.375000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
+      <measurement errorPlus="2.375000e+01" value="1.787500e+02" errorMinus="2.375000e+01"/>
+      <measurement errorPlus="1.637096e-03" value="1.410684e-01" errorMinus="1.637096e-03"/>
     </dataPoint>
     <dataPoint>
-      <measurement errorPlus="2.375000e+01" value="2.02500e+02" errorMinus="2.375000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
+      <measurement errorPlus="2.375000e+01" value="2.262500e+02" errorMinus="2.375000e+01"/>
+      <measurement errorPlus="1.169764e-03" value="7.202418e-02" errorMinus="1.169764e-03"/>
     </dataPoint>
     <dataPoint>
-      <measurement errorPlus="2.375000e+01" value="2.500000e+02" errorMinus="2.375000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
+      <measurement errorPlus="2.375000e+01" value="2.737500e+02" errorMinus="2.375000e+01"/>
+      <measurement errorPlus="8.430028e-04" value="3.740585e-02" errorMinus="8.430028e-04"/>
     </dataPoint>
     <dataPoint>
-      <measurement errorPlus="2.375000e+01" value="2.975000e+02" errorMinus="2.375000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
+      <measurement errorPlus="2.375000e+01" value="3.212500e+02" errorMinus="2.375000e+01"/>
+      <measurement errorPlus="6.582340e-04" value="2.280563e-02" errorMinus="6.582340e-04"/>
     </dataPoint>
     <dataPoint>
-      <measurement errorPlus="2.375000e+01" value="3.450000e+02" errorMinus="2.375000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
+      <measurement errorPlus="2.375000e+01" value="3.687500e+02" errorMinus="2.375000e+01"/>
+      <measurement errorPlus="5.020841e-04" value="1.326889e-02" errorMinus="5.020841e-04"/>
     </dataPoint>
     <dataPoint>
-      <measurement errorPlus="2.375000e+01" value="3.925000e+02" errorMinus="2.375000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
+      <measurement errorPlus="2.375000e+01" value="4.162500e+02" errorMinus="2.375000e+01"/>
+      <measurement errorPlus="3.967369e-04" value="8.284890e-03" errorMinus="3.967369e-04"/>
     </dataPoint>
     <dataPoint>
-      <measurement errorPlus="2.375000e+01" value="4.400000e+02" errorMinus="2.375000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
+      <measurement errorPlus="2.375000e+01" value="4.637500e+02" errorMinus="2.375000e+01"/>
+      <measurement errorPlus="3.117394e-04" value="5.115226e-03" errorMinus="3.117394e-04"/>
     </dataPoint>
     <dataPoint>
-      <measurement errorPlus="2.375000e+01" value="4.875000e+02" errorMinus="2.375000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
+      <measurement errorPlus="2.375000e+01" value="5.112500e+02" errorMinus="2.375000e+01"/>
+      <measurement errorPlus="2.607715e-04" value="3.579330e-03" errorMinus="2.607715e-04"/>
     </dataPoint>
     <dataPoint>
-      <measurement errorPlus="2.375000e+01" value="5.350000e+02" errorMinus="2.375000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
+      <measurement errorPlus="2.375000e+01" value="5.587500e+02" errorMinus="2.375000e+01"/>
+      <measurement errorPlus="2.106094e-04" value="2.334731e-03" errorMinus="2.106094e-04"/>
     </dataPoint>
     <dataPoint>
-      <measurement errorPlus="2.375000e+01" value="5.825000e+02" errorMinus="2.375000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
-    </dataPoint>
-    <dataPoint>
-      <measurement errorPlus="2.375000e+01" value="6.300000e+02" errorMinus="2.375000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
+      <measurement errorPlus="2.375000e+01" value="6.062500e+02" errorMinus="2.375000e+01"/>
+      <measurement errorPlus="1.684014e-04" value="1.492701e-03" errorMinus="1.684014e-04"/>
     </dataPoint>
   </dataPointSet>
-
   <dataPointSet name="d21-x01-y01" dimension="2"
-      path="/REF/CMS_EWK_12_XXX" title="Third leading jet HT diff xsec distribution. Data unfolding Svd method with K=6">
+      path="/REF/CMS_EWK_12_XXX" title="Third leading jet HT diff xsec distribution.">
     <annotation>
-      <item key="Title" value="Third leading jet HT diff xsec distribution. Data unfolding Svd method with K=6" sticky="true"/>
+      <item key="Title" value="Third leading jet HT diff xsec distribution." sticky="true"/>
       <item key="AidaPath" value="/REF/CMS_EWK_12_XXX/d21-x01-y01" sticky="true"/>
     </annotation>
     <dataPoint>
-      <measurement errorPlus="3.857000e+01" value="9.000000e+01" errorMinus="3.857000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
+      <measurement errorPlus="3.857143e+01" value="1.285714e+02" errorMinus="3.857143e+01"/>
+      <measurement errorPlus="7.516008e-03" value="3.382535e-01" errorMinus="7.516008e-03"/>
     </dataPoint>
     <dataPoint>
-      <measurement errorPlus="3.857000e+01" value="1.671000e+02" errorMinus="3.857000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
+      <measurement errorPlus="3.857143e+01" value="2.057143e+02" errorMinus="3.857143e+01"/>
+      <measurement errorPlus="7.416080e-03" value="3.293189e-01" errorMinus="7.416080e-03"/>
     </dataPoint>
     <dataPoint>
-      <measurement errorPlus="3.857000e+01" value="2.442000e+02" errorMinus="3.857000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
+      <measurement errorPlus="3.857143e+01" value="2.828571e+02" errorMinus="3.857143e+01"/>
+      <measurement errorPlus="5.380763e-03" value="1.733627e-01" errorMinus="5.380763e-03"/>
     </dataPoint>
     <dataPoint>
-      <measurement errorPlus="3.857000e+01" value="3.21400e+02" errorMinus="3.857000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
+      <measurement errorPlus="3.857143e+01" value="3.600000e+02" errorMinus="3.857143e+01"/>
+      <measurement errorPlus="3.687834e-03" value="8.143489e-02" errorMinus="3.687834e-03"/>
     </dataPoint>
     <dataPoint>
-      <measurement errorPlus="3.857000e+01" value="3.985000e+02" errorMinus="3.857000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
+      <measurement errorPlus="3.857143e+01" value="4.371429e+02" errorMinus="3.857143e+01"/>
+      <measurement errorPlus="2.608587e-03" value="4.074539e-02" errorMinus="2.608587e-03"/>
     </dataPoint>
     <dataPoint>
-      <measurement errorPlus="3.857000e+01" value="4.757000e+02" errorMinus="3.857000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
+      <measurement errorPlus="3.857143e+01" value="5.142857e+02" errorMinus="3.857143e+01"/>
+      <measurement errorPlus="1.960276e-03" value="2.300925e-02" errorMinus="1.960276e-03"/>
     </dataPoint>
     <dataPoint>
-      <measurement errorPlus="3.857000e+01" value="5.528000e+02" errorMinus="3.857000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
-    </dataPoint>
-    <dataPoint>
-      <measurement errorPlus="3.857000e+01" value="6.300000e+02" errorMinus="3.857000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
+      <measurement errorPlus="3.857143e+01" value="5.914286e+02" errorMinus="3.857143e+01"/>
+      <measurement errorPlus="1.522257e-03" value="1.387534e-02" errorMinus="1.522257e-03"/>
     </dataPoint>
   </dataPointSet>
   <dataPointSet name="d25-x01-y01" dimension="2"
-      path="/REF/CMS_EWK_12_XXX" title="Third leading jet HT diff xsec distribution. Data unfolding Svd method with K=6">
+      path="/REF/CMS_EWK_12_XXX" title="Third leading jet HT diff xsec distribution.">
     <annotation>
-      <item key="Title" value="Third leading jet HT diff xsec distribution. Data unfolding Svd method with K=6" sticky="true"/>
+      <item key="Title" value="Third leading jet HT diff xsec distribution." sticky="true"/>
       <item key="AidaPath" value="/REF/CMS_EWK_12_XXX/d25-x01-y01" sticky="true"/>
     </annotation>
     <dataPoint>
-      <measurement errorPlus="3.857000e+01" value="9.000000e+01" errorMinus="3.857000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
+      <measurement errorPlus="3.857143e+01" value="1.285714e+02" errorMinus="3.857143e+01"/>
+      <measurement errorPlus="5.947150e-03" value="3.207031e-01" errorMinus="5.947150e-03"/>
     </dataPoint>
     <dataPoint>
-      <measurement errorPlus="3.857000e+01" value="1.671000e+02" errorMinus="3.857000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
+      <measurement errorPlus="3.857143e+01" value="2.057143e+02" errorMinus="3.857143e+01"/>
+      <measurement errorPlus="6.117142e-03" value="3.392990e-01" errorMinus="6.117142e-03"/>
     </dataPoint>
     <dataPoint>
-      <measurement errorPlus="3.857000e+01" value="2.442000e+02" errorMinus="3.857000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
+      <measurement errorPlus="3.857143e+01" value="2.828571e+02" errorMinus="3.857143e+01"/>
+      <measurement errorPlus="4.438205e-03" value="1.786076e-01" errorMinus="4.438205e-03"/>
     </dataPoint>
     <dataPoint>
-      <measurement errorPlus="3.857000e+01" value="3.21400e+02" errorMinus="3.857000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
+      <measurement errorPlus="3.857143e+01" value="3.600000e+02" errorMinus="3.857143e+01"/>
+      <measurement errorPlus="3.019659e-03" value="8.268011e-02" errorMinus="3.019659e-03"/>
     </dataPoint>
     <dataPoint>
-      <measurement errorPlus="3.857000e+01" value="3.985000e+02" errorMinus="3.857000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
+      <measurement errorPlus="3.857143e+01" value="4.371429e+02" errorMinus="3.857143e+01"/>
+      <measurement errorPlus="2.195637e-03" value="4.371259e-02" errorMinus="2.195637e-03"/>
     </dataPoint>
     <dataPoint>
-      <measurement errorPlus="3.857000e+01" value="4.757000e+02" errorMinus="3.857000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
+      <measurement errorPlus="3.857143e+01" value="5.142857e+02" errorMinus="3.857143e+01"/>
+      <measurement errorPlus="1.588417e-03" value="2.287782e-02" errorMinus="1.588417e-03"/>
     </dataPoint>
     <dataPoint>
-      <measurement errorPlus="3.857000e+01" value="5.528000e+02" errorMinus="3.857000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
-    </dataPoint>
-    <dataPoint>
-      <measurement errorPlus="3.857000e+01" value="6.300000e+02" errorMinus="3.857000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
+      <measurement errorPlus="3.857143e+01" value="5.914286e+02" errorMinus="3.857143e+01"/>
+      <measurement errorPlus="1.156127e-03" value="1.211983e-02" errorMinus="1.156127e-03"/>
     </dataPoint>
   </dataPointSet>
-
   <dataPointSet name="d22-x01-y01" dimension="2"
-      path="/REF/CMS_EWK_12_XXX" title="Fourth leading jet HT diff xsec distribution. Data unfolding Svd method with K=6">
+      path="/REF/CMS_EWK_12_XXX" title="Fourth leading jet HT diff xsec distribution.">
     <annotation>
-      <item key="Title" value="Fourth leading jet HT diff xsec distribution. Data unfolding Svd method with K=6" sticky="true"/>
+      <item key="Title" value="Fourth leading jet HT diff xsec distribution." sticky="true"/>
       <item key="AidaPath" value="/REF/CMS_EWK_12_XXX/d22-x01-y01" sticky="true"/>
     </annotation>
     <dataPoint>
-      <measurement errorPlus="5.100000e+01" value="1.200000e+02" errorMinus="5.100000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
+      <measurement errorPlus="5.100000e+01" value="1.710000e+02" errorMinus="5.100000e+01"/>
+      <measurement errorPlus="1.487756e-02" value="2.526734e-01" errorMinus="1.487756e-02"/>
     </dataPoint>
     <dataPoint>
-      <measurement errorPlus="5.100000e+01" value="2.220000e+02" errorMinus="5.100000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
+      <measurement errorPlus="5.100000e+01" value="2.730000e+02" errorMinus="5.100000e+01"/>
+      <measurement errorPlus="1.841907e-02" value="3.872856e-01" errorMinus="1.841907e-02"/>
     </dataPoint>
     <dataPoint>
-      <measurement errorPlus="5.100000e+01" value="3.240000e+02" errorMinus="5.100000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
+      <measurement errorPlus="5.100000e+01" value="3.750000e+02" errorMinus="5.100000e+01"/>
+      <measurement errorPlus="1.365306e-02" value="2.127925e-01" errorMinus="1.365306e-02"/>
     </dataPoint>
     <dataPoint>
-      <measurement errorPlus="5.100000e+01" value="4.26000e+02" errorMinus="5.100000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
+      <measurement errorPlus="5.100000e+01" value="4.770000e+02" errorMinus="5.100000e+01"/>
+      <measurement errorPlus="9.321885e-03" value="9.919817e-02" errorMinus="9.321885e-03"/>
     </dataPoint>
     <dataPoint>
-      <measurement errorPlus="5.100000e+01" value="5.280000e+02" errorMinus="5.100000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
-    </dataPoint>
-    <dataPoint>
-      <measurement errorPlus="5.100000e+01" value="6.300000e+02" errorMinus="5.100000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
+      <measurement errorPlus="5.100000e+01" value="5.790000e+02" errorMinus="5.100000e+01"/>
+      <measurement errorPlus="6.487842e-03" value="4.805037e-02" errorMinus="6.487842e-03"/>
     </dataPoint>
   </dataPointSet>
   <dataPointSet name="d26-x01-y01" dimension="2"
-      path="/REF/CMS_EWK_12_XXX" title="Fourth leading jet HT diff xsec distribution. Data unfolding Svd method with K=6">
+      path="/REF/CMS_EWK_12_XXX" title="Fourth leading jet HT diff xsec distribution.">
     <annotation>
-      <item key="Title" value="Third leading jet HT diff xsec distribution. Data unfolding Svd method with K=6" sticky="true"/>
+      <item key="Title" value="Third leading jet HT diff xsec distribution." sticky="true"/>
       <item key="AidaPath" value="/REF/CMS_EWK_12_XXX/d26-x01-y01" sticky="true"/>
     </annotation>
     <dataPoint>
-      <measurement errorPlus="5.100000e+01" value="1.200000e+02" errorMinus="5.100000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
+      <measurement errorPlus="5.100000e+01" value="1.710000e+02" errorMinus="5.100000e+01"/>
+      <measurement errorPlus="1.212223e-02" value="2.146121e-01" errorMinus="1.212223e-02"/>
     </dataPoint>
     <dataPoint>
-      <measurement errorPlus="5.100000e+01" value="2.220000e+02" errorMinus="5.100000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
+      <measurement errorPlus="5.100000e+01" value="2.730000e+02" errorMinus="5.100000e+01"/>
+      <measurement errorPlus="1.615441e-02" value="3.811285e-01" errorMinus="1.615441e-02"/>
     </dataPoint>
     <dataPoint>
-      <measurement errorPlus="5.100000e+01" value="3.240000e+02" errorMinus="5.100000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
+      <measurement errorPlus="5.100000e+01" value="3.750000e+02" errorMinus="5.100000e+01"/>
+      <measurement errorPlus="1.262277e-02" value="2.327011e-01" errorMinus="1.262277e-02"/>
     </dataPoint>
     <dataPoint>
-      <measurement errorPlus="5.100000e+01" value="4.26000e+02" errorMinus="5.100000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
+      <measurement errorPlus="5.100000e+01" value="4.770000e+02" errorMinus="5.100000e+01"/>
+      <measurement errorPlus="8.923472e-03" value="1.162939e-01" errorMinus="8.923472e-03"/>
     </dataPoint>
     <dataPoint>
-      <measurement errorPlus="5.100000e+01" value="5.280000e+02" errorMinus="5.100000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
-    </dataPoint>
-    <dataPoint>
-      <measurement errorPlus="5.100000e+01" value="6.300000e+02" errorMinus="5.100000e+01"/>
-      <measurement errorPlus="0.1" value="1.0" errorMinus="0.1"/>
+      <measurement errorPlus="5.100000e+01" value="5.790000e+02" errorMinus="5.100000e+01"/>
+      <measurement errorPlus="6.151459e-03" value="5.526441e-02" errorMinus="6.151459e-03"/>
     </dataPoint>
   </dataPointSet>
 </aida>
