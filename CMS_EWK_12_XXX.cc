@@ -47,7 +47,10 @@ namespace Rivet {
       const FinalState fs;
       addProjection(fs, "FS");
 
-    
+      num_weights_tot = 0;
+      sum_weights_tot = 0.;
+      sum_weights2_tot = 0.;
+
       h_leading_jet_pt_ele = bookHistogram1D(1, 1, 1, "MyDbn - HepData dataset 1, x-axis 1 and y-axis 2");
       h_second_jet_pt_ele = bookHistogram1D(2, 1, 1);
       h_number_jets_ele = bookHistogram1D(3, 1, 1);
@@ -87,6 +90,10 @@ namespace Rivet {
       std::vector<fastjet::PseudoJet> vecs;
       bool Z_ele = false;
       bool Z_muon = false; 
+
+      num_weights_tot++;
+      sum_weights_tot+=weight;
+      sum_weights2_tot+=weight*weight;
 
       // vettore indici dell'elettrone e i suoi fotoni
       vector <unsigned int> ele_photons;
@@ -288,16 +295,6 @@ namespace Rivet {
       FourMomentum Z_momentum_ele(add(ele_dres.p_part,pos_dres.p_part));
       FourMomentum Z_momentum_muon(add(muon_dres.p_part,antimuon_dres.p_part));
 
-      if(Z_momentum_ele.mass2()<0){
-        cout << "Z_mass_ele minore di 0" << endl;
-        vetoEvent;
-      }
-
-      if(Z_momentum_muon.mass2()<0){
-        cout << "Z_mass_muon minore di 0" << endl;
-        vetoEvent;
-      }
-
 
       // Z mass window
       if((Z_momentum_ele.mass()>71. && Z_momentum_ele.mass()<111.) && (!ele_dres.lepton_photon.empty() && !pos_dres.lepton_photon.empty())){
@@ -453,6 +450,15 @@ namespace Rivet {
       // scale(_h_YYYY, crossSection()/sumOfWeights()); # norm to cross section
       // normalize(_h_YYYY); # normalize to unity
       
+     cout << endl;
+     cout << "num_weights_tot=" << num_weights_tot << endl;
+     cout << "sum_weights_tot=" << sum_weights_tot << endl;
+     cout << "sum_weights2_tot=" << sum_weights2_tot << endl;
+     double mean_weight_tot = 0.;
+     if (num_weights_tot != 0) mean_weight_tot = sum_weights_tot/(double)num_weights_tot;
+     cout << "mean_weight_tot=" << mean_weight_tot << endl;
+     cout << endl;
+
     }
 
     //@}
@@ -464,6 +470,10 @@ namespace Rivet {
 
 
   private:
+
+    unsigned int num_weights_tot;
+    double sum_weights_tot;
+    double sum_weights2_tot;
 
     /// @name Histograms
     //@{
