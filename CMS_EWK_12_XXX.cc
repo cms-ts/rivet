@@ -131,8 +131,8 @@ namespace Rivet {
       // copy of the list of final state partcles
       part_jets = fs.particles();
 
-      double pTcut = 0.00;
-      //double pTcut = 0.25;
+      //double pTcut = 0.00;
+      double pTcut = 0.25;
 
       // riempio un vettore(photons) con gli indici dei fotoni in fs e un vettore(neutrinos) con gli indici dei neutrini in fs
       for (unsigned int i=0; i<fs.particles().size(); i++){
@@ -157,8 +157,9 @@ namespace Rivet {
 
         // electron selection
         if(Id == ELECTRON && 
-           fabs(eta) < 2.4 &&
-           (fabs(eta) < 1.4442 || fabs(eta) > 1.5660)){
+//           fabs(eta) < 2.4 &&
+//           (fabs(eta) < 1.4442 || fabs(eta) > 1.5660)){
+           fabs(eta) < 2.4){
           FourMomentum ele_p(fs.particles().at(i).momentum());
           //ho un elettrone e lo inserisco come primo elemento del vettore ele_photons che conterra' l'elettrone e a seguire i suoi fotoni
           ele_photons.push_back(i);
