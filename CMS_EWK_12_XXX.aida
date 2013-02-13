@@ -542,7 +542,7 @@
     </dataPoint>
   </dataPointSet>
   <dataPointSet name="d03-x01-y01" dimension="2"
-      path="/REF/CMS_EWK_12_XXX" title="Unfold Unfolding Matrix in \ of jets + Z">
+      path="/REF/CMS_EWK_12_XXX" title="Jet multiplicity in \ of jets + Z -> electrons">
     <annotation>
       <item key="Title" value="Unfold Unfolding Matrix in \ of jets + Z" sticky="true"/>
       <item key="AidaPath" value="/REF/CMS_EWK_12_XXX/d03-x01-y01" sticky="true"/>
@@ -916,7 +916,7 @@
     </dataPoint>
   </dataPointSet>
   <dataPointSet name="d08-x01-y01" dimension="2"
-      path="/REF/CMS_EWK_12_XXX" title="Unfold Unfolding Matrix in \ of jets + Z">
+      path="/REF/CMS_EWK_12_XXX" title="Jet multiplicity in \ of jets + Z -> muons">
     <annotation>
       <item key="Title" value="Unfold Unfolding Matrix in \ of jets + Z" sticky="true"/>
       <item key="AidaPath" value="/REF/CMS_EWK_12_XXX/d08-x01-y01" sticky="true"/>
@@ -1414,6 +1414,68 @@
     <dataPoint>
       <measurement errorPlus="5.100000e+01" value="5.790000e+02" errorMinus="5.100000e+01"/>
       <measurement errorPlus="6.151459e-03" value="5.526441e-02" errorMinus="6.151459e-03"/>
+    </dataPoint>
+  </dataPointSet>
+  <dataPointSet name="d27-x01-y01" dimension="2"
+      path="/REF/CMS_EWK_12_XXX" title="Inclusive jet multiplicity in \ of jets + Z -> electrons">
+    <annotation>
+      <item key="Title" value="Inclusive jet multiplicity in \ of jets + Z -> electrons" sticky="true"/>
+      <item key="AidaPath" value="/REF/CMS_EWK_12_XXX/d27-x01-y01" sticky="true"/>
+    </annotation>
+    <dataPoint>
+      <measurement errorPlus="5.000000e-01" value="1.000000e+00" errorMinus="5.000000e-01"/>
+      <measurement errorPlus="2.273640e-03" value="7.964892e-01" errorMinus="2.273640e-03"/>
+    </dataPoint>
+    <dataPoint>
+      <measurement errorPlus="5.000000e-01" value="2.000000e+00" errorMinus="5.000000e-01"/>
+      <measurement errorPlus="1.418054e-03" value="1.644078e-01" errorMinus="1.418054e-03"/>
+    </dataPoint>
+    <dataPoint>
+      <measurement errorPlus="5.000000e-01" value="3.000000e+00" errorMinus="5.000000e-01"/>
+      <measurement errorPlus="6.799579e-04" value="3.172932e-02" errorMinus="6.799579e-04"/>
+    </dataPoint>
+    <dataPoint>
+      <measurement errorPlus="5.000000e-01" value="4.000000e+00" errorMinus="5.000000e-01"/>
+      <measurement errorPlus="2.926853e-04" value="5.889977e-03" errorMinus="2.926853e-04"/>
+    </dataPoint>
+    <dataPoint>
+      <measurement errorPlus="5.000000e-01" value="5.000000e+00" errorMinus="5.000000e-01"/>
+      <measurement errorPlus="1.083921e-04" value="1.263389e-03" errorMinus="1.083921e-04"/>
+    </dataPoint>
+    <dataPoint>
+      <measurement errorPlus="5.000000e-01" value="6.000000e+00" errorMinus="5.000000e-01"/>
+      <measurement errorPlus="3.034015e-05" value="2.203019e-04" errorMinus="3.034015e-05"/>
+    </dataPoint>
+  </dataPointSet>
+  <dataPointSet name="d28-x01-y01" dimension="2"
+      path="/REF/CMS_EWK_12_XXX" title="Inclusive jet multiplicity in \ of jets + Z -> muons">
+    <annotation>
+      <item key="Title" value="Inclusive jet multiplicity in \ of jets + Z -> muons" sticky="true"/>
+      <item key="AidaPath" value="/REF/CMS_EWK_12_XXX/d28-x01-y01" sticky="true"/>
+    </annotation>
+    <dataPoint>
+      <measurement errorPlus="5.000000e-01" value="1.000000e+00" errorMinus="5.000000e-01"/>
+      <measurement errorPlus="2.273640e-03" value="7.964892e-01" errorMinus="2.273640e-03"/>
+    </dataPoint>
+    <dataPoint>
+      <measurement errorPlus="5.000000e-01" value="2.000000e+00" errorMinus="5.000000e-01"/>
+      <measurement errorPlus="1.418054e-03" value="1.644078e-01" errorMinus="1.418054e-03"/>
+    </dataPoint>
+    <dataPoint>
+      <measurement errorPlus="5.000000e-01" value="3.000000e+00" errorMinus="5.000000e-01"/>
+      <measurement errorPlus="6.799579e-04" value="3.172932e-02" errorMinus="6.799579e-04"/>
+    </dataPoint>
+    <dataPoint>
+      <measurement errorPlus="5.000000e-01" value="4.000000e+00" errorMinus="5.000000e-01"/>
+      <measurement errorPlus="2.926853e-04" value="5.889977e-03" errorMinus="2.926853e-04"/>
+    </dataPoint>
+    <dataPoint>
+      <measurement errorPlus="5.000000e-01" value="5.000000e+00" errorMinus="5.000000e-01"/>
+      <measurement errorPlus="1.083921e-04" value="1.263389e-03" errorMinus="1.083921e-04"/>
+    </dataPoint>
+    <dataPoint>
+      <measurement errorPlus="5.000000e-01" value="6.000000e+00" errorMinus="5.000000e-01"/>
+      <measurement errorPlus="3.034015e-05" value="2.203019e-04" errorMinus="3.034015e-05"/>
     </dataPoint>
   </dataPointSet>
 </aida>

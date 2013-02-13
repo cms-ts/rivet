@@ -72,6 +72,9 @@ namespace Rivet
       h_ht3_muo = bookHistogram1D(25, 1, 1);
       h_ht4_muo = bookHistogram1D(26, 1, 1);
 
+      h_inclnumber_jets_ele = bookHistogram1D(27, 1, 1);
+      h_inclnumber_jets_muon = bookHistogram1D(28, 1, 1);
+
     }
 
     /// Perform the per-event analysis
@@ -390,6 +393,9 @@ namespace Rivet
               h_eta_leading_ele->fill(leadingEta, weight);
               h_number_jets_ele->fill(jet_list.size(), weight);
               h_ht1_ele->fill(ht, weight);
+              for ( unsigned int iter = 1; iter <= jet_list.size(); iter++ ) {
+                h_inclnumber_jets_ele->fill(iter, weight);
+              }
             }
           if (Z_muon)
             {
@@ -397,6 +403,9 @@ namespace Rivet
               h_eta_leading_muon->fill(leadingEta, weight);
               h_number_jets_muon->fill(jet_list.size(), weight);
               h_ht1_muo->fill(ht, weight);
+              for ( unsigned int iter = 1; iter <= jet_list.size(); iter++ ) {
+                h_inclnumber_jets_muon->fill(iter, weight);
+              }
             }
         }
 
@@ -487,11 +496,13 @@ namespace Rivet
     /// @name Histograms
 
     AIDA::IHistogram1D* h_number_jets_ele;
+    AIDA::IHistogram1D* h_inclnumber_jets_ele;
     AIDA::IHistogram1D* h_leading_jet_pt_ele;
     AIDA::IHistogram1D* h_second_jet_pt_ele;
     AIDA::IHistogram1D* h_third_jet_pt_ele;
     AIDA::IHistogram1D* h_fourth_jet_pt_ele;
     AIDA::IHistogram1D* h_number_jets_muon;
+    AIDA::IHistogram1D* h_inclnumber_jets_muon;
     AIDA::IHistogram1D* h_leading_jet_pt_muon;
     AIDA::IHistogram1D* h_second_jet_pt_muon;
     AIDA::IHistogram1D* h_third_jet_pt_muon;
