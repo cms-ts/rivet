@@ -158,7 +158,13 @@ namespace Rivet
                 {
                   double eta_photon = fs.particles().at(photons.at(j)).momentum().eta();
                   double phi_photon = fs.particles().at(photons.at(j)).momentum().phi();
-                  double deltaR = sqrt((eta - eta_photon) * (eta - eta_photon) + (phi - phi_photon) * (phi - phi_photon));
+		
+		  double delta_phi = fabs(phi - phi_photon);
+
+                  if (delta_phi > acos(-1))
+                        delta_phi = 2*acos(-1) - delta_phi;
+
+                  double deltaR = sqrt((eta - eta_photon) * (eta - eta_photon) + delta_phi * delta_phi);
                   if (deltaR < 0.1)
                     {
                       ele_photons.push_back(photons.at(j));
@@ -194,7 +200,13 @@ namespace Rivet
                 {
                   double eta_photon = fs.particles().at(photons.at(j)).momentum().eta();
                   double phi_photon = fs.particles().at(photons.at(j)).momentum().phi();
-                  double deltaR = sqrt((eta - eta_photon) * (eta - eta_photon) + (phi - phi_photon) * (phi - phi_photon));
+
+		  double delta_phi = fabs(phi - phi_photon);
+
+                  if (delta_phi > acos(-1))
+                        delta_phi = 2*acos(-1) - delta_phi;
+
+                  double deltaR = sqrt((eta - eta_photon) * (eta - eta_photon) + delta_phi * delta_phi);
                   if (deltaR < 0.1)
                     {
                       pos_photons.push_back(photons.at(j));
@@ -228,7 +240,13 @@ namespace Rivet
                 {
                   double eta_photon = fs.particles().at(photons.at(j)).momentum().eta();
                   double phi_photon = fs.particles().at(photons.at(j)).momentum().phi();
-                  double deltaR = sqrt((eta - eta_photon) * (eta - eta_photon) + (phi - phi_photon) * (phi - phi_photon));
+
+		  double delta_phi = fabs(phi - phi_photon);
+
+                  if (delta_phi > acos(-1))
+                        delta_phi = 2*acos(-1) - delta_phi;
+
+                  double deltaR = sqrt((eta - eta_photon) * (eta - eta_photon) + delta_phi * delta_phi);
                   if (deltaR < 0.1)
                     {
                       muon_photons.push_back(photons.at(j));
@@ -263,7 +281,13 @@ namespace Rivet
                 {
                   double eta_photon = fs.particles().at(photons.at(j)).momentum().eta();
                   double phi_photon = fs.particles().at(photons.at(j)).momentum().phi();
-                  double deltaR = sqrt((eta - eta_photon) * (eta - eta_photon) + (phi - phi_photon) * (phi - phi_photon));
+
+                  double delta_phi = fabs(phi - phi_photon);
+
+                  if (delta_phi > acos(-1))
+                        delta_phi = 2*acos(-1) - delta_phi;
+
+                  double deltaR = sqrt((eta - eta_photon) * (eta - eta_photon) + delta_phi * delta_phi);
                   if (deltaR < 0.1)
                     {
                       antimuon_photons.push_back(photons.at(j));
