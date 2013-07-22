@@ -186,31 +186,31 @@
       <item key="AidaPath" value="/REF/CMS_EWK_12_XXX/d10-x01-y01" sticky="true"/>
     </annotation>
     <dataPoint>
-      <measurement errorPlus="5.000000e+00" value="3.500000e+01" errorMinus="5.000000e+00"/>
+      <measurement errorPlus="7.500000e+00" value="3.750000e+01" errorMinus="7.500000e+00"/>
       <measurement errorPlus="2.368863e+04" value="2.543065e+03" errorMinus="2.368863e+04"/>
     </dataPoint>
     <dataPoint>
-      <measurement errorPlus="5.000000e+00" value="4.500000e+01" errorMinus="5.000000e+00"/>
+      <measurement errorPlus="7.500000e+00" value="5.250000e+01" errorMinus="7.500000e+00"/>
       <measurement errorPlus="6.176451e+01" value="8.745954e+02" errorMinus="6.176451e+01"/>
     </dataPoint>
     <dataPoint>
-      <measurement errorPlus="5.000000e+00" value="5.500000e+01" errorMinus="5.000000e+00"/>
+      <measurement errorPlus="7.500000e+00" value="6.750000e+01" errorMinus="7.500000e+00"/>
       <measurement errorPlus="2.773592e+01" value="3.645216e+02" errorMinus="2.773592e+01"/>
     </dataPoint>
     <dataPoint>
-      <measurement errorPlus="5.000000e+00" value="6.500000e+01" errorMinus="5.000000e+00"/>
+      <measurement errorPlus="7.500000e+00" value="8.250000e+01" errorMinus="7.500000e+00"/>
       <measurement errorPlus="1.928672e+01" value="1.589988e+02" errorMinus="1.928672e+01"/>
     </dataPoint>
     <dataPoint>
-      <measurement errorPlus="5.000000e+00" value="7.500000e+01" errorMinus="5.000000e+00"/>
+      <measurement errorPlus="7.500000e+00" value="9.750000e+01" errorMinus="7.500000e+00"/>
       <measurement errorPlus="1.143974e+01" value="6.914544e+01" errorMinus="1.143974e+01"/>
     </dataPoint>
     <dataPoint>
-      <measurement errorPlus="5.000000e+00" value="8.500000e+01" errorMinus="5.000000e+00"/>
+      <measurement errorPlus="7.500000e+00" value="11.25000e+01" errorMinus="7.500000e+00"/>
       <measurement errorPlus="6.007353e+00" value="4.817820e+01" errorMinus="6.007353e+00"/>
     </dataPoint>
     <dataPoint>
-      <measurement errorPlus="5.000000e+00" value="9.500000e+01" errorMinus="5.000000e+00"/>
+      <measurement errorPlus="7.500000e+00" value="12.75000e+01" errorMinus="7.500000e+00"/>
       <measurement errorPlus="5.004053e+00" value="3.094623e+01" errorMinus="5.004053e+00"/>
     </dataPoint>
   </dataPointSet>
@@ -737,31 +737,31 @@
       <item key="AidaPath" value="/REF/CMS_EWK_12_XXX/d05-x01-y01" sticky="true"/>
     </annotation>
     <dataPoint>
-      <measurement errorPlus="5.000000e+00" value="3.500000e+01" errorMinus="5.000000e+00"/>
+      <measurement errorPlus="7.500000e+00" value="3.750000e+01" errorMinus="7.500000e+00"/>
       <measurement errorPlus="3.056242e+04" value="2.939378e+03" errorMinus="3.056242e+04"/>
     </dataPoint>
     <dataPoint>
-      <measurement errorPlus="5.000000e+00" value="4.500000e+01" errorMinus="5.000000e+00"/>
+      <measurement errorPlus="7.500000e+00" value="5.250000e+01" errorMinus="7.500000e+00"/>
       <measurement errorPlus="9.314143e+01" value="1.022720e+03" errorMinus="9.314143e+01"/>
     </dataPoint>
     <dataPoint>
-      <measurement errorPlus="5.000000e+00" value="5.500000e+01" errorMinus="5.000000e+00"/>
+      <measurement errorPlus="7.500000e+00" value="6.750000e+01" errorMinus="7.500000e+00"/>
       <measurement errorPlus="4.347148e+01" value="4.334651e+02" errorMinus="4.347148e+01"/>
     </dataPoint>
     <dataPoint>
-      <measurement errorPlus="5.000000e+00" value="6.500000e+01" errorMinus="5.000000e+00"/>
+      <measurement errorPlus="7.500000e+00" value="8.250000e+01" errorMinus="7.500000e+00"/>
       <measurement errorPlus="2.748180e+01" value="1.929301e+02" errorMinus="2.748180e+01"/>
     </dataPoint>
     <dataPoint>
-      <measurement errorPlus="5.000000e+00" value="7.500000e+01" errorMinus="5.000000e+00"/>
+      <measurement errorPlus="7.500000e+00" value="9.750000e+01" errorMinus="7.500000e+00"/>
       <measurement errorPlus="1.532563e+01" value="8.648772e+01" errorMinus="1.532563e+01"/>
     </dataPoint>
     <dataPoint>
-      <measurement errorPlus="5.000000e+00" value="8.500000e+01" errorMinus="5.000000e+00"/>
+      <measurement errorPlus="7.500000e+00" value="11.25000e+01" errorMinus="7.500000e+00"/>
       <measurement errorPlus="8.277881e+00" value="6.289362e+01" errorMinus="8.277881e+00"/>
     </dataPoint>
     <dataPoint>
-      <measurement errorPlus="5.000000e+00" value="9.500000e+01" errorMinus="5.000000e+00"/>
+      <measurement errorPlus="7.500000e+00" value="12.75000e+01" errorMinus="7.500000e+00"/>
       <measurement errorPlus="7.410259e+00" value="4.225931e+01" errorMinus="7.410259e+00"/>
     </dataPoint>
   </dataPointSet>
