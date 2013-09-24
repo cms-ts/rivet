@@ -155,9 +155,11 @@ namespace Rivet
               fabs(fs.particles().at(i).pdgId()) == 14 ||
               fabs(fs.particles().at(i).pdgId()) == 16)
             neutrinos.push_back(i);
+/*
           if (PID::threeCharge(fs.particles().at(i).pdgId()) != 0)
             if (fs.particles().at(i).momentum().pT() < 0.25)
               low_pt_charged.push_back(i);
+*/
         }
 
 
