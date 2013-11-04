@@ -437,7 +437,6 @@ namespace Rivet
 		for (unsigned int c = 0; c < constituents.size() && !bjet_found; c++) {
 			int index = constituents.at(c).user_index();
 			const Particle & part = part_jets.at(index);
-			const PdgId pid = part.pdgId();
 			HepMC::GenVertex* gv = part.genParticle().production_vertex();
 			if (gv) {
 				foreach (const GenParticle* pi, Rivet::particles(gv, HepMC::ancestors)){
