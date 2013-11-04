@@ -438,22 +438,21 @@ namespace Rivet
 			int index = constituents.at(c).user_index();
 			const Particle & part = part_jets.at(index);
 			const PdgId pid = part.pdgId();
-			//cout << "pdgId delle particele nel jet = " << pid << endl;
-			if ((abs(pid)/100)%10 == 5 || (abs(pid)/1000)%10 == 5)
-				bjet_found = true;
 			HepMC::GenVertex* gv = part.genParticle().production_vertex();
 			if (gv) {
 				foreach (const GenParticle* pi, Rivet::particles(gv, HepMC::ancestors)){
-					const PdgId pid2 = pi->pdg_id();
-					if ((abs(pid2)/100)%10 == 5 || (abs(pid2)/1000)%10 == 5) bjet_found = true;
+					const PdgId pid = pi->pdg_id();
+					if ((abs(pid)/100)%10 == 5 || (abs(pid)/1000)%10 == 5) bjet_found = true;
 		        	}
 
 			}
 
 		}
 
-	if(bjet_found)
-		vect_bjets.push_back(jet_list[k]);		
+		if(bjet_found) {
+			Nb++;
+			vect_bjets.push_back(jet_list[k]);		
+		}
 
 	}
 	      
