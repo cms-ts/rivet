@@ -41,27 +41,27 @@
     </annotation>
   <dataPoint>
     <measurement value="1.000000e+00" errorPlus="5.000000e-01" errorMinus="5.000000e-01"/>
-    <measurement value="6.142120e+01" errorPlus="2.632029e+00" errorMinus="2.632029e+00"/>
+    <measurement value="6.142120e+01" errorPlus="3.302082e+00" errorMinus="3.302082e+00"/>
   </dataPoint>
   <dataPoint>
     <measurement value="2.000000e+00" errorPlus="5.000000e-01" errorMinus="5.000000e-01"/>
-    <measurement value="1.300211e+01" errorPlus="1.336947e+00" errorMinus="1.336947e+00"/>
+    <measurement value="1.300211e+01" errorPlus="1.549307e+00" errorMinus="1.549307e+00"/>
   </dataPoint>
   <dataPoint>
     <measurement value="3.000000e+00" errorPlus="5.000000e-01" errorMinus="5.000000e-01"/>
-    <measurement value="2.525705e+00" errorPlus="3.508611e-01" errorMinus="3.508611e-01"/>
+    <measurement value="2.525705e+00" errorPlus="3.839391e-01" errorMinus="3.839391e-01"/>
   </dataPoint>
   <dataPoint>
     <measurement value="4.000000e+00" errorPlus="5.000000e-01" errorMinus="5.000000e-01"/>
-    <measurement value="4.910137e-01" errorPlus="7.828197e-02" errorMinus="7.828197e-02"/>
+    <measurement value="4.910137e-01" errorPlus="8.572094e-02" errorMinus="8.572094e-02"/>
   </dataPoint>
   <dataPoint>
     <measurement value="5.000000e+00" errorPlus="5.000000e-01" errorMinus="5.000000e-01"/>
-    <measurement value="8.124985e-02" errorPlus="1.514485e-02" errorMinus="1.514485e-02"/>
+    <measurement value="8.124985e-02" errorPlus="1.606444e-02" errorMinus="1.606444e-02"/>
   </dataPoint>
   <dataPoint>
     <measurement value="6.000000e+00" errorPlus="5.000000e-01" errorMinus="5.000000e-01"/>
-    <measurement value="1.435702e-02" errorPlus="4.970423e-03" errorMinus="4.970423e-03"/>
+    <measurement value="1.435702e-02" errorPlus="4.677101e-03" errorMinus="4.677101e-03"/>
   </dataPoint>
   </dataPointSet>
   <dataPointSet name="d03-x01-y01" dimension="2"
@@ -727,27 +727,27 @@
     </annotation>
   <dataPoint>
     <measurement value="1.000000e+00" errorPlus="5.000000e-01" errorMinus="5.000000e-01"/>
-    <measurement value="6.143500e+01" errorPlus="2.983095e+00" errorMinus="2.983095e+00"/>
+    <measurement value="6.143500e+01" errorPlus="3.228070e+00" errorMinus="3.228070e+00"/>
   </dataPoint>
   <dataPoint>
     <measurement value="2.000000e+00" errorPlus="5.000000e-01" errorMinus="5.000000e-01"/>
-    <measurement value="1.285206e+01" errorPlus="1.649720e+00" errorMinus="1.649720e+00"/>
+    <measurement value="1.285206e+01" errorPlus="1.529053e+00" errorMinus="1.529053e+00"/>
   </dataPoint>
   <dataPoint>
     <measurement value="3.000000e+00" errorPlus="5.000000e-01" errorMinus="5.000000e-01"/>
-    <measurement value="2.477867e+00" errorPlus="4.047002e-01" errorMinus="4.047002e-01"/>
+    <measurement value="2.477867e+00" errorPlus="3.757632e-01" errorMinus="3.757632e-01"/>
   </dataPoint>
   <dataPoint>
     <measurement value="4.000000e+00" errorPlus="5.000000e-01" errorMinus="5.000000e-01"/>
-    <measurement value="4.619108e-01" errorPlus="8.773264e-02" errorMinus="8.773264e-02"/>
+    <measurement value="4.619108e-01" errorPlus="8.045143e-02" errorMinus="8.045143e-02"/>
   </dataPoint>
   <dataPoint>
     <measurement value="5.000000e+00" errorPlus="5.000000e-01" errorMinus="5.000000e-01"/>
-    <measurement value="7.785800e-02" errorPlus="1.589060e-02" errorMinus="1.589060e-02"/>
+    <measurement value="7.785800e-02" errorPlus="1.513740e-02" errorMinus="1.513740e-02"/>
   </dataPoint>
   <dataPoint>
     <measurement value="6.000000e+00" errorPlus="5.000000e-01" errorMinus="5.000000e-01"/>
-    <measurement value="1.037210e-02" errorPlus="3.207703e-03" errorMinus="3.207703e-03"/>
+    <measurement value="1.037210e-02" errorPlus="3.363012e-03" errorMinus="3.363012e-03"/>
   </dataPoint>
   </dataPointSet>
   <dataPointSet name="d17-x01-y01" dimension="2"
@@ -1413,27 +1413,27 @@
     </annotation>
   <dataPoint>
     <measurement value="1.000000e+00" errorPlus="5.000000e-01" errorMinus="5.000000e-01"/>
-    <measurement value="6.143250e+01" errorPlus="2.683942e+00" errorMinus="2.683942e+00"/>
+    <measurement value="6.143250e+01" errorPlus="3.186362e+00" errorMinus="3.186362e+00"/>
   </dataPoint>
   <dataPoint>
     <measurement value="2.000000e+00" errorPlus="5.000000e-01" errorMinus="5.000000e-01"/>
-    <measurement value="1.291429e+01" errorPlus="1.477934e+00" errorMinus="1.477934e+00"/>
+    <measurement value="1.291429e+01" errorPlus="1.535703e+00" errorMinus="1.535703e+00"/>
   </dataPoint>
   <dataPoint>
     <measurement value="3.000000e+00" errorPlus="5.000000e-01" errorMinus="5.000000e-01"/>
-    <measurement value="2.498217e+00" errorPlus="3.749256e-01" errorMinus="3.749256e-01"/>
+    <measurement value="2.498217e+00" errorPlus="3.784362e-01" errorMinus="3.784362e-01"/>
   </dataPoint>
   <dataPoint>
     <measurement value="4.000000e+00" errorPlus="5.000000e-01" errorMinus="5.000000e-01"/>
-    <measurement value="4.741467e-01" errorPlus="8.192149e-02" errorMinus="8.192149e-02"/>
+    <measurement value="4.741467e-01" errorPlus="8.221183e-02" errorMinus="8.221183e-02"/>
   </dataPoint>
   <dataPoint>
     <measurement value="5.000000e+00" errorPlus="5.000000e-01" errorMinus="5.000000e-01"/>
-    <measurement value="7.875699e-02" errorPlus="1.507701e-02" errorMinus="1.507701e-02"/>
+    <measurement value="7.875699e-02" errorPlus="1.519735e-02" errorMinus="1.519735e-02"/>
   </dataPoint>
   <dataPoint>
     <measurement value="6.000000e+00" errorPlus="5.000000e-01" errorMinus="5.000000e-01"/>
-    <measurement value="1.155862e-02" errorPlus="3.744342e-03" errorMinus="3.744342e-03"/>
+    <measurement value="1.155862e-02" errorPlus="3.714121e-03" errorMinus="3.714121e-03"/>
   </dataPoint>
   </dataPointSet>
   <dataPointSet name="d31-x01-y01" dimension="2"
