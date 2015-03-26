@@ -1,0 +1,57 @@
+Name: CMS_2015_I1310737
+Year: 2015
+Summary: Measurements of jet multiplicity and differential production cross sections of Z+jets events in proton-proton collisions at sqrt(s) = 7 TeV
+Experiment: CMS
+Collider: LHC
+InspireID: I1310737
+Status: UNVALIDATED
+Authors:
+ - Fabio Cossutti (fabio.cossutti@ts.infn.it)
+ - Chiara La Licata (chiara.lalicata@ts.infn.it)
+References:
+ - Phys.Rev. D91 (2015) 052008
+ - http://dx.doi.org/10.1103/PhysRevD.91.052008
+ - http://arxiv.org/abs/arXiv:1408.3104
+ - http://inspirehep.net/record/1310737
+RunInfo:
+   Run MC generators with Z decaying leptonically into both electrons and muons at 7 TeV CoM energy. 
+   Order of 5 million unweighted events can give a reasonable global comparison, but precision in the 
+   high jet multiplicity region/high jet pt may require substantially larger samples or statistical 
+   enhancement of high jet multiplicities.
+Beams: [p+, p+]
+Energies: [7000]
+PtCuts: first two leading electrons or muons with pt > 20 GeV and |eta| < 2.4
+        Dilepton invariant mass in the [71,111] GeV range
+        Jets pt > 30 GeV and |eta| < 2.4
+Description:
+   'Measurements of differential cross sections are presented for 
+   the production of a Z boson and at least one hadronic jet in 
+   proton-proton collisions at $\sqrt{s}=\unit{7}{\TeV}$, recorded by 
+   the CMS detector, using a data sample corresponding to an integrated 
+   luminosity of $\unit{4.9} fb^{−1}$. The jet multiplicity distribution 
+   is measured for up to six jets. The differential cross sections are 
+   measured as a function of jet transverse momentum and pseudorapidity 
+   for the four highest transverse momentum jets. The distribution of 
+   the scalar sum of jet transverse momenta is also measured as a function 
+   of the jet multiplicity. The measurements are compared with theoretical 
+   predictions at leading and next-to-leading order in perturbative QCD.'
+BibKey: Khachatryan:2014zya
+BibTeX: '@article{Khachatryan:2014zya,
+      author         = "Khachatryan, V. and others",
+      title          = "{Measurements of jet multiplicity and differential
+                        production cross sections of $Z +$ jets events in
+                        proton-proton collisions at $\sqrt{s} =$ 7 TeV}",
+      collaboration  = "CMS",
+      journal        = "Phys.Rev.",
+      number         = "5",
+      volume         = "D91",
+      pages          = "052008",
+      doi            = "10.1103/PhysRevD.91.052008",
+      year           = "2015",
+      eprint         = "1408.3104",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ex",
+      reportNumber   = "CMS-SMP-12-017, CERN-PH-EP-2014-205",
+      SLACcitation   = "%%CITATION = ARXIV:1408.3104;%%",
+}
+
