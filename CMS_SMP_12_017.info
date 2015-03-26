@@ -1,32 +1,57 @@
-Name: CMS_SMP_12_017
-Year: <Insert year of publication>
-Summary: <Insert short CMS_SMP_12_017 description>
-Experiment: <Insert the experiment name>
-Collider: <Insert CMS_SMP_12_017 collider>
-SpiresID: <Insert the SPIRES IRN ID>
+Name: CMS_2015_I1310737
+Year: 2015
+Summary: Measurements of jet multiplicity and differential production cross sections of Z+jets events in proton-proton collisions at sqrt(s) = 7 TeV
+Experiment: CMS
+Collider: LHC
+InspireID: I1310737
 Status: UNVALIDATED
 Authors:
- - Your Name <your@email.address>
-#References:
-# - <Example: Phys.Lett.B639:151-158,2006, Erratum-ibid.B658:285-289,2008>
-# - <Example: doi:10.1016/j.physletb.2006.04.048>
-# - <Example: arXiv:hep-ex/0511054 (plus erratum)>
+ - Fabio Cossutti (fabio.cossutti@ts.infn.it)
+ - Chiara La Licata (chiara.lalicata@ts.infn.it)
+References:
+ - Phys.Rev. D91 (2015) 052008
+ - http://dx.doi.org/10.1103/PhysRevD.91.052008
+ - http://arxiv.org/abs/arXiv:1408.3104
+ - http://inspirehep.net/record/1310737
 RunInfo:
-  <Insert event types (not gen-specific), energy, any kinematic
-  efficiency cut(s) that may be needed; essentially any details needed to set
-  up a generator to reproduce the data.>
-NumEvents: 1000000
-#Beams: <Insert beam pair(s), e.g. [p-, p+] or [[p-, e-], [p-, e+]]>
-#Energies: <Insert list of run energies or beam energy pairs in GeV,
-#           e.g. [1960] or [[8.0, 3.5]] or [630, 1800]. Order pairs to match "Beams">
-#PtCuts: <Insert list of kinematic pT cuts in GeV, e.g. [0, 20]>
+   Run MC generators with Z decaying leptonically into both electrons and muons at 7 TeV CoM energy. 
+   Order of 5 million unweighted events can give a reasonable global comparison, but precision in the 
+   high jet multiplicity region/high jet pt may require substantially larger samples or statistical 
+   enhancement of high jet multiplicities.
+Beams: [p+, p+]
+Energies: [7000]
+PtCuts: first two leading electrons or muons with pt > 20 GeV and |eta| < 2.4
+        Dilepton invariant mass in the [71,111] GeV range
+        Jets pt > 30 GeV and |eta| < 2.4
 Description:
-  '<Insert a fairly long description, including what is measured
-  and if possible what it is useful for in terms of MC validation
-  and tuning. Use \LaTeX for maths like $\pT > \unit{50}{\GeV}$.
-  Use single quotes around the block if required (see YAML 1.2 manual)>'
-BibKey: 
-BibTeX: ''
-ToDo:
- - Implement the analysis, test it, remove this ToDo, and mark as VALIDATED :-)
+   'Measurements of differential cross sections are presented for 
+   the production of a Z boson and at least one hadronic jet in 
+   proton-proton collisions at $\sqrt{s}=\unit{7}{\TeV}$, recorded by 
+   the CMS detector, using a data sample corresponding to an integrated 
+   luminosity of $\unit{4.9} fb^{−1}$. The jet multiplicity distribution 
+   is measured for up to six jets. The differential cross sections are 
+   measured as a function of jet transverse momentum and pseudorapidity 
+   for the four highest transverse momentum jets. The distribution of 
+   the scalar sum of jet transverse momenta is also measured as a function 
+   of the jet multiplicity. The measurements are compared with theoretical 
+   predictions at leading and next-to-leading order in perturbative QCD.'
+BibKey: Khachatryan:2014zya
+BibTeX: '@article{Khachatryan:2014zya,
+      author         = "Khachatryan, V. and others",
+      title          = "{Measurements of jet multiplicity and differential
+                        production cross sections of $Z +$ jets events in
+                        proton-proton collisions at $\sqrt{s} =$ 7 TeV}",
+      collaboration  = "CMS",
+      journal        = "Phys.Rev.",
+      number         = "5",
+      volume         = "D91",
+      pages          = "052008",
+      doi            = "10.1103/PhysRevD.91.052008",
+      year           = "2015",
+      eprint         = "1408.3104",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ex",
+      reportNumber   = "CMS-SMP-12-017, CERN-PH-EP-2014-205",
+      SLACcitation   = "%%CITATION = ARXIV:1408.3104;%%",
+}
 
