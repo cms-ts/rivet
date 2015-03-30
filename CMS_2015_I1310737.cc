@@ -8,8 +8,6 @@
 #include "Rivet/Tools/ParticleIdUtils.hh"
 #include "Rivet/Math/Vector4.hh"
 
-//#define DebugLog 
-
 namespace Rivet
 {
 
@@ -29,10 +27,8 @@ namespace Rivet
     void init()
     {
 
-#ifdef DebugLog
       // set optionally the verbosity for the internal Rivet message system
-      getLog().setLevel(0);
-#endif
+      //      getLog().setLevel(0);
 
       const FinalState fs;
 
@@ -424,11 +420,12 @@ namespace Rivet
     void finalize()
     {
       
+      double norm(1.);
+      if ( std::fabs(sumOfWeights()) > 0. ) norm = crossSection()/sumOfWeights();
+
       MSG_INFO("Cross section = " << std::setfill(' ') << std::setw(14) << std::fixed << std::setprecision(3) << crossSection() << " pb");
       MSG_INFO("# Events      = " << std::setfill(' ') << std::setw(14) << std::fixed << std::setprecision(3) << numEvents() );
       MSG_INFO("SumW          = " << std::setfill(' ') << std::setw(14) << std::fixed << std::setprecision(3) << sumOfWeights());
-      double norm(1.);
-      if ( std::fabs(sumOfWeights()) > 0. ) norm = crossSection()/sumOfWeights();
       MSG_INFO("Norm factor   = " << std::setfill(' ') << std::setw(14) << std::fixed << std::setprecision(6) << norm);
       
       scale(_h_excmult_jets_tot, norm );
