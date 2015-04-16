@@ -91,7 +91,7 @@ Title=$\text{CMS}~~~~~~~\sqrt{s}=7~\text{TeV}~~~~~~~\text{L}_\text{int}=4.9~\tex
 FullRange=1
 LogX=0
 LogY=0
-XLabel=Third jet $|\eta\$
+XLabel=Third jet $|\eta\|$
 YLabel=$d\sigma/d|\eta|$ [pb]
 LegendXPos=0.7
 LegendYPos=0.9
