@@ -1,0 +1,49 @@
+independent_variables:
+- header: {name: AZB(MAX DR(Zb) MIN DR(Zb)), units: }
+values:
+  - {low:           0.00, high:           0.10}
+  - {low:           0.10, high:           0.20}
+  - {low:           0.20, high:           0.30}
+  - {low:           0.30, high:           0.40}
+  - {low:           0.40, high:           0.50}
+  - {low:           0.50, high:           0.60}
+  - {low:           0.60, high:           0.70}
+  - {low:           0.70, high:           1.00}
+dependent_variables:
+- header: {name: D(SIG(fiducial))/DAZB, units: PB}
+qualifiers:
+- {name: RE, value: Dummy}
+- {name: SQRT(S), units: GEV, value: 8000}
+values:
+ - value:          1.31
+   - {symerror:          0.20, label: tot}
+   - {symerror:          0.09, label: stat}
+   - {symerror:          0.18, label: syst}
+ - value:          0.84
+   - {symerror:          0.14, label: tot}
+   - {symerror:          0.07, label: stat}
+   - {symerror:          0.13, label: syst}
+ - value:          0.45
+   - {symerror:          0.10, label: tot}
+   - {symerror:          0.05, label: stat}
+   - {symerror:          0.09, label: syst}
+ - value:         0.244
+   - {symerror:         0.069, label: tot}
+   - {symerror:         0.035, label: stat}
+   - {symerror:         0.060, label: syst}
+ - value:         0.150
+   - {symerror:         0.058, label: tot}
+   - {symerror:         0.022, label: stat}
+   - {symerror:         0.054, label: syst}
+ - value:         0.120
+   - {symerror:         0.041, label: tot}
+   - {symerror:         0.019, label: stat}
+   - {symerror:         0.036, label: syst}
+ - value:         0.082
+   - {symerror:         0.030, label: tot}
+   - {symerror:         0.013, label: stat}
+   - {symerror:         0.027, label: syst}
+ - value:         0.032
+   - {symerror:         0.016, label: tot}
+   - {symerror:         0.006, label: stat}
+   - {symerror:         0.015, label: syst}

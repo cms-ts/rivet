@@ -1,0 +1,49 @@
+independent_variables:
+- header: {name: ETA(b/j), units: }
+values:
+  - {low:           0.00, high:           0.31}
+  - {low:           0.31, high:           0.62}
+  - {low:           0.62, high:           0.94}
+  - {low:           0.94, high:           1.25}
+  - {low:           1.25, high:           1.56}
+  - {low:           1.56, high:           1.88}
+  - {low:           1.88, high:           2.19}
+  - {low:           2.19, high:           2.50}
+dependent_variables:
+- header: {name: B JET/INCLUSIVE JETS D(SIG(fiducial))/DETA(b/j) RATIO, units: %}
+qualifiers:
+- {name: RE, value: P P --> Z0 < LEPTON+ LEPTON- > + >= 1 B JET}
+- {name: SQRT(S), units: GEV, value: 8000}
+values:
+ - value:          4.91
+   - {symerror:          0.44, label: tot}
+   - {symerror:          0.16, label: stat}
+   - {symerror:          0.41, label: syst}
+ - value:          4.86
+   - {symerror:          0.50, label: tot}
+   - {symerror:          0.15, label: stat}
+   - {symerror:          0.48, label: syst}
+ - value:          5.04
+   - {symerror:          0.36, label: tot}
+   - {symerror:          0.15, label: stat}
+   - {symerror:          0.33, label: syst}
+ - value:          4.95
+   - {symerror:          0.30, label: tot}
+   - {symerror:          0.16, label: stat}
+   - {symerror:          0.26, label: syst}
+ - value:          4.95
+   - {symerror:          0.37, label: tot}
+   - {symerror:          0.19, label: stat}
+   - {symerror:          0.32, label: syst}
+ - value:          4.93
+   - {symerror:          0.40, label: tot}
+   - {symerror:          0.21, label: stat}
+   - {symerror:          0.34, label: syst}
+ - value:          4.82
+   - {symerror:          0.50, label: tot}
+   - {symerror:          0.24, label: stat}
+   - {symerror:          0.44, label: syst}
+ - value:          4.55
+   - {symerror:          0.54, label: tot}
+   - {symerror:          0.24, label: stat}
+   - {symerror:          0.48, label: syst}
