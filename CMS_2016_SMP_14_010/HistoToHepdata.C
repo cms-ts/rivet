@@ -47,13 +47,13 @@ Double_t closest( Double_t original ) {
   Double_t Inte = (int)original;
   Double_t Deci = 10.*(original-Inte);
 
-  std::cout << "input = " << original << std::endl;
+  //  std::cout << "input = " << original << std::endl;
 
   if ( 100.*(Deci-(int)Deci) != 99. ) { return original; }
 
   New = (Deci < 0 ? ceil(Deci - 0.5) : floor(Deci + 0.5)) ;
 
-  std::cout << "input = " << original << " output = " << Inte+New/10. << std::endl;
+  //  std::cout << "input = " << original << " output = " << Inte+New/10. << std::endl;
 
   return Inte+New/10.;
 
@@ -361,7 +361,7 @@ void HistoToHepdata( Int_t DistributionId = 1,
     
     TString title = myHistoT->GetTitle();
     
-    std::cout << title << "\n" << std::endl;
+    //    std::cout << title << "\n" << std::endl;
     
     Int_t nbins = myHistoT->GetNbinsX();
     
@@ -420,7 +420,7 @@ void HistoToHepdata( Int_t DistributionId = 1,
     for ( Int_t iBin = 1; iBin <= nbins; iBin++ ) {
       std::cout << "  - {low: " << std::setw(14) << std::fixed << std::setprecision(2) << xxlow_[iBin-1] 
                 << ", high: "  << std::setw(14) << std::fixed << std::setprecision(2) << xxhigh_[iBin-1] 
-                << std::endl;
+                << "}" << std::endl;
     } 
     
     TString yname = ylabel(DistributionId);
