@@ -1,0 +1,84 @@
+independent_variables:
+- header: {name: MIN DR(Zb), units: }
+values:
+  - {low:           0.00, high:           0.27}
+  - {low:           0.27, high:           0.53}
+  - {low:           0.53, high:           0.80}
+  - {low:           0.80, high:           1.07}
+  - {low:           1.07, high:           1.33}
+  - {low:           1.33, high:           1.60}
+  - {low:           1.60, high:           1.87}
+  - {low:           1.87, high:           2.13}
+  - {low:           2.13, high:           2.40}
+  - {low:           2.40, high:           2.67}
+  - {low:           2.67, high:           2.93}
+  - {low:           2.93, high:           3.20}
+  - {low:           3.20, high:           3.47}
+  - {low:           3.47, high:           3.73}
+  - {low:           3.73, high:           4.00}
+dependent_variables:
+- header: {name: D(SIG(fiducial))/D(MIN DR(Zb)), units: PB}
+qualifiers:
+- {name: RE, value: P P --> Z0 < LEPTON+ LEPTON- > + >= 2 B JETS}
+- {name: SQRT(S), units: GEV, value: 8000}
+values:
+ - value:        0.0078
+   - {symerror:        0.0053, label: tot}
+   - {symerror:        0.0026, label: stat}
+   - {symerror:        0.0047, label: syst}
+ - value:        0.0212
+   - {symerror:        0.0088, label: tot}
+   - {symerror:        0.0045, label: stat}
+   - {symerror:        0.0076, label: syst}
+ - value:         0.039
+   - {symerror:         0.012, label: tot}
+   - {symerror:         0.007, label: stat}
+   - {symerror:         0.009, label: syst}
+ - value:         0.047
+   - {symerror:         0.012, label: tot}
+   - {symerror:         0.007, label: stat}
+   - {symerror:         0.010, label: syst}
+ - value:         0.064
+   - {symerror:         0.016, label: tot}
+   - {symerror:         0.009, label: stat}
+   - {symerror:         0.014, label: syst}
+ - value:         0.089
+   - {symerror:         0.019, label: tot}
+   - {symerror:         0.011, label: stat}
+   - {symerror:         0.016, label: syst}
+ - value:         0.094
+   - {symerror:         0.019, label: tot}
+   - {symerror:         0.012, label: stat}
+   - {symerror:         0.015, label: syst}
+ - value:         0.147
+   - {symerror:         0.031, label: tot}
+   - {symerror:         0.014, label: stat}
+   - {symerror:         0.028, label: syst}
+ - value:         0.169
+   - {symerror:         0.028, label: tot}
+   - {symerror:         0.014, label: stat}
+   - {symerror:         0.024, label: syst}
+ - value:         0.175
+   - {symerror:         0.029, label: tot}
+   - {symerror:         0.013, label: stat}
+   - {symerror:         0.026, label: syst}
+ - value:         0.153
+   - {symerror:         0.036, label: tot}
+   - {symerror:         0.013, label: stat}
+   - {symerror:         0.034, label: syst}
+ - value:         0.097
+   - {symerror:         0.025, label: tot}
+   - {symerror:         0.011, label: stat}
+   - {symerror:         0.023, label: syst}
+ - value:         0.047
+   - {symerror:         0.012, label: tot}
+   - {symerror:         0.006, label: stat}
+   - {symerror:         0.010, label: syst}
+ - value:        0.0254
+   - {symerror:        0.0072, label: tot}
+   - {symerror:        0.0038, label: stat}
+   - {symerror:        0.0061, label: syst}
+ - value:        0.0173
+   - {symerror:        0.0067, label: tot}
+   - {symerror:        0.0038, label: stat}
+   - {symerror:        0.0055, label: syst}

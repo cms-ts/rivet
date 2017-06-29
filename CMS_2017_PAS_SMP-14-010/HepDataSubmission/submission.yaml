@@ -1,0 +1,257 @@
+---
+  
+additional_resources: 
+  - {location: "http://cms-results.web.cern.ch/cms-results/public-results/publications/SMP-14-010/index.html", description: "web page with auxiliary material"}
+
+comment: | # Information that applies to all data tables.
+  CERN-LHC.  Measurements of the associated production of a Z boson with at least one jet originating from a b quark in proton-proton collisions at s= 8 TeV are presented. Differential cross sections are measured with data collected by the CMS experiment corresponding to an integrated luminosity of 19.8 fb**1. Z bosons are reconstructed through their decays to electrons and muons. Cross sections are measured as a function of observables characterizing the kinematics of the b jet and the Z boson. Ratios of differential cross sections for the associated production with at least one b jet to the associated production with any jet are also presented. The production of a Z boson with two b jets is investigated, and differential cross sections are measured for the dijet system. Results are compared to theoretical predictions, testing two different flavour schemes for the choice of initial-state partons.
+
+  The fiducial region is defined as:
+  - 2e or 2mu
+  - ptLepton > 20 GeV
+  - |etaLepton| < 2.4
+  - mll must be between 71 and 111 GeV
+  - at least one jet anti-kt(DR=0.5) with ptJet > 30 GeV and |etaJet| < 2.4
+  - DeltaR(l,jet) > 0.5
+  - for Z+>=1b (indicated as Z(1b)): at least one selected jet b-tagged; for Z+>=2b (indicated as Z(2b)): at least two selected jets b-tagged
+
+---
+# Start of table entries
+# This is Table 1.
+name: "Table 1"
+location: Figure 4 left
+description: Differential fiducial cross section for Z(1b) production as a function of the leading b jet pT
+keywords: # used for searching, possibly multiple values for each keyword
+  - {name: reactions, values: [P P --> Z0 < LEPTON+ LEPTON- > + >= 1 B JET]}
+  - {name: observables, values: [SIG]}
+  - {name: cmenergies, values: [8000.0]}
+  - {name: phrases, values: [Differential Cross Section, Proton-Proton Scattering, Z+jets Production, b jets]}
+data_file: data1.yaml
+
+---
+# This is Table 2.
+name: "Table 2"
+location: Figure 4 right
+description: Cross section ratio for Z(1b) and Z+jets production as a function of the leading b/inclusive (j) jet pT
+keywords: # used for searching, possibly multiple values for each keyword
+  - {name: reactions, values: [P P --> Z0 < LEPTON+ LEPTON- > + >= 1 B JET]}
+  - {name: observables, values: [SIG]}
+  - {name: cmenergies, values: [8000.0]}
+  - {name: phrases, values: [Differential Cross Section, Proton-Proton Scattering, Z+jets Production, b jets]}
+data_file: data2.yaml
+
+---
+# This is Table 3.
+name: "Table 3"
+location: Figure 5 left
+description: Differential fiducial cross section for Z(1b) production as a function of the leading b jet |eta|
+keywords: # used for searching, possibly multiple values for each keyword
+  - {name: reactions, values: [P P --> Z0 < LEPTON+ LEPTON- > + >= 1 B JET]}
+  - {name: observables, values: [SIG]}
+  - {name: cmenergies, values: [8000.0]}
+  - {name: phrases, values: [Differential Cross Section, Proton-Proton Scattering, Z+jets Production, b jets]}
+data_file: data3.yaml
+
+---
+# This is Table 4.
+name: "Table 4"
+location: Figure 5 right
+description: cross section ratio for Z(1b) and Z+jets production as a function of the leading b/inclusive (j) jet |eta|
+keywords: # used for searching, possibly multiple values for each keyword
+  - {name: reactions, values: [P P --> Z0 < LEPTON+ LEPTON- > + >= 1 B JET]}
+  - {name: observables, values: [SIG]}
+  - {name: cmenergies, values: [8000.0]}
+  - {name: phrases, values: [Differential Cross Section, Proton-Proton Scattering, Z+jets Production, b jets]}
+data_file: data4.yaml
+
+---
+# This is Table 5.
+name: "Table 5"
+location: Figure 6 left
+description: Differential fiducial cross section for Z(1b) production as a function of the Z boson pT
+keywords: # used for searching, possibly multiple values for each keyword
+  - {name: reactions, values: [P P --> Z0 < LEPTON+ LEPTON- > + >= 1 B JET]}
+  - {name: observables, values: [SIG]}
+  - {name: cmenergies, values: [8000.0]}
+  - {name: phrases, values: [Differential Cross Section, Proton-Proton Scattering, Z+jets Production, b jets]}
+data_file: data5.yaml
+
+---
+# This is Table 6.
+name: "Table 6"
+location: Figure 6 right
+description: cross section ratio for Z(1b) and Z+jets production as a function of the Z boson pT
+keywords: # used for searching, possibly multiple values for each keyword
+  - {name: reactions, values: [P P --> Z0 < LEPTON+ LEPTON- > + >= 1 B JET]}
+  - {name: observables, values: [SIG]}
+  - {name: cmenergies, values: [8000.0]}
+  - {name: phrases, values: [Differential Cross Section, Proton-Proton Scattering, Z+jets Production, b jets]}
+data_file: data6.yaml
+
+---
+# This is Table 7.
+name: "Table 7"
+location: Figure 7 left
+description: Differential fiducial cross section for Z(1b) production as a function of HT 
+keywords: # used for searching, possibly multiple values for each keyword
+  - {name: reactions, values: [P P --> Z0 < LEPTON+ LEPTON- > + >= 1 B JET]}
+  - {name: observables, values: [SIG]}
+  - {name: cmenergies, values: [8000.0]}
+  - {name: phrases, values: [Differential Cross Section, Proton-Proton Scattering, Z+jets Production, b jets]}
+data_file: data7.yaml
+
+---
+# This is Table 8.
+name: "Table 8"
+location: Figure 7 right
+description: cross section ratio for Z(1b) and Z+jets production as a function of HT 
+keywords: # used for searching, possibly multiple values for each keyword
+  - {name: reactions, values: [P P --> Z0 < LEPTON+ LEPTON- > + >= 1 B JET]}
+  - {name: observables, values: [SIG]}
+  - {name: cmenergies, values: [8000.0]}
+  - {name: phrases, values: [Differential Cross Section, Proton-Proton Scattering, Z+jets Production, b jets]}
+data_file: data8.yaml
+
+---
+# This is Table 9.
+name: "Table 9"
+location: Figure 8 left
+description: Differential fiducial cross section for Z(1b) production as a function of DeltaPhi(Zb)
+keywords: # used for searching, possibly multiple values for each keyword
+  - {name: reactions, values: [P P --> Z0 < LEPTON+ LEPTON- > + >= 1 B JET]}
+  - {name: observables, values: [SIG]}
+  - {name: cmenergies, values: [8000.0]}
+  - {name: phrases, values: [Differential Cross Section, Proton-Proton Scattering, Z+jets Production, b jets]}
+data_file: data9.yaml
+
+---
+# This is Table 10.
+name: "Table 10"
+location: Figure 8 right
+description: cross section ratio for Z(1b) and Z+jets production as a function of DeltaPhi(Zb)
+keywords: # used for searching, possibly multiple values for each keyword
+  - {name: reactions, values: [P P --> Z0 < LEPTON+ LEPTON- > + >= 1 B JET]}
+  - {name: observables, values: [SIG]}
+  - {name: cmenergies, values: [8000.0]}
+  - {name: phrases, values: [Differential Cross Section, Proton-Proton Scattering, Z+jets Production, b jets]}
+data_file: data10.yaml
+
+---
+# This is Table 11.
+name: "Table 11"
+location: Figure 9
+description: Differential fiducial cross section for Z(2b) production as a function of the leading b jet pT
+keywords: # used for searching, possibly multiple values for each keyword
+  - {name: reactions, values: [P P --> Z0 < LEPTON+ LEPTON- > + >= 1 B JET]}
+  - {name: observables, values: [SIG]}
+  - {name: cmenergies, values: [8000.0]}
+  - {name: phrases, values: [Differential Cross Section, Proton-Proton Scattering, Z+jets Production, b jets]}
+data_file: data11.yaml
+
+---
+# This is Table 12.
+name: "Table 12"
+location: Figure 10
+description: Differential fiducial cross section for Z(2b) production as a function of the subleading b jet pT
+keywords: # used for searching, possibly multiple values for each keyword
+  - {name: reactions, values: [P P --> Z0 < LEPTON+ LEPTON- > + >= 1 B JET]}
+  - {name: observables, values: [SIG]}
+  - {name: cmenergies, values: [8000.0]}
+  - {name: phrases, values: [Differential Cross Section, Proton-Proton Scattering, Z+jets Production, b jets]}
+data_file: data12.yaml
+
+---
+# This is Table 13.
+name: "Table 13"
+location: Figure 11
+description: Differential fiducial cross section for Z(2b) production as a function of the Z boson pT
+keywords: # used for searching, possibly multiple values for each keyword
+  - {name: reactions, values: [P P --> Z0 < LEPTON+ LEPTON- > + >= 1 B JET]}
+  - {name: observables, values: [SIG]}
+  - {name: cmenergies, values: [8000.0]}
+  - {name: phrases, values: [Differential Cross Section, Proton-Proton Scattering, Z+jets Production, b jets]}
+data_file: data13.yaml
+
+---
+# This is Table 14.
+name: "Table 14"
+location: Figure 12
+description: Differential fiducial cross section for Z(2b) production as a function of the invari- ant mass of the b jet pair, Mbb
+keywords: # used for searching, possibly multiple values for each keyword
+  - {name: reactions, values: [P P --> Z0 < LEPTON+ LEPTON- > + >= 1 B JET]}
+  - {name: observables, values: [SIG]}
+  - {name: cmenergies, values: [8000.0]}
+  - {name: phrases, values: [Differential Cross Section, Proton-Proton Scattering, Z+jets Production, b jets]}
+data_file: data14.yaml
+
+---
+# This is Table 15.
+name: "Table 15"
+location: Figure 13
+description: Differential fiducial cross section for Z(2b) production as a function of the invari- ant mass of the Zbb system, MZbb
+keywords: # used for searching, possibly multiple values for each keyword
+  - {name: reactions, values: [P P --> Z0 < LEPTON+ LEPTON- > + >= 1 B JET]}
+  - {name: observables, values: [SIG]}
+  - {name: cmenergies, values: [8000.0]}
+  - {name: phrases, values: [Differential Cross Section, Proton-Proton Scattering, Z+jets Production, b jets]}
+data_file: data15.yaml
+
+---
+# This is Table 16.
+name: "Table 16"
+location: Figure 14
+description: Differential fiducial cross section for Z(2b) production as a function of DeltaPhi(bb)
+keywords: # used for searching, possibly multiple values for each keyword
+  - {name: reactions, values: [P P --> Z0 < LEPTON+ LEPTON- > + >= 1 B JET]}
+  - {name: observables, values: [SIG]}
+  - {name: cmenergies, values: [8000.0]}
+  - {name: phrases, values: [Differential Cross Section, Proton-Proton Scattering, Z+jets Production, b jets]}
+data_file: data16.yaml
+
+---
+# This is Table 17.
+name: "Table 17"
+location: Figure 15
+description: Differential fiducial cross section for Z(2b) production as a function of DeltaR(bb)
+keywords: # used for searching, possibly multiple values for each keyword
+  - {name: reactions, values: [P P --> Z0 < LEPTON+ LEPTON- > + >= 1 B JET]}
+  - {name: observables, values: [SIG]}
+  - {name: cmenergies, values: [8000.0]}
+  - {name: phrases, values: [Differential Cross Section, Proton-Proton Scattering, Z+jets Production, b jets]}
+data_file: data17.yaml
+
+---
+# This is Table 18.
+name: "Table 18"
+location: Figure 16
+description: Differential fiducial cross section for Z(2b) production as a function of minimum DeltaR(Zb)
+keywords: # used for searching, possibly multiple values for each keyword
+  - {name: reactions, values: [P P --> Z0 < LEPTON+ LEPTON- > + >= 1 B JET]}
+  - {name: observables, values: [SIG]}
+  - {name: cmenergies, values: [8000.0]}
+  - {name: phrases, values: [Differential Cross Section, Proton-Proton Scattering, Z+jets Production, b jets]}
+data_file: data18.yaml
+
+---
+# This is Table 19.
+name: "Table 19"
+location: Figure 17
+description: Differential fiducial cross section for Z(2b) production as a function of AZbb
+keywords: # used for searching, possibly multiple values for each keyword
+  - {name: reactions, values: [P P --> Z0 < LEPTON+ LEPTON- > + >= 1 B JET]}
+  - {name: observables, values: [SIG]}
+  - {name: cmenergies, values: [8000.0]}
+  - {name: phrases, values: [Differential Cross Section, Proton-Proton Scattering, Z+jets Production, b jets]}
+data_file: data19.yaml
+
+---
+# This is Table 20.
+name: "Table 20"
+location: Section 8.3
+description: fiducial cross section, for a single lepton type, for the production of Z(1b) and Z(2b) events
+keywords: # used for searching, possibly multiple values for each keyword
+  - {name: reactions, values: [P P --> Z0 < LEPTON+ LEPTON- > + >= 1 B JET]}
+  - {name: observables, values: [SIG]}
+  - {name: cmenergies, values: [8000.0]}
+  - {name: phrases, values: [Differential Cross Section, Proton-Proton Scattering, Z+jets Production, b jets]}
+data_file: data20.yaml
