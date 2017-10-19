@@ -2,11 +2,9 @@
 #include "Rivet/Tools/Cuts.hh"
 #include "Rivet/Projections/FinalState.hh"
 #include "Rivet/Projections/VetoedFinalState.hh"
-#include "Rivet/Projections/LeadingParticlesFinalState.hh"
-#include "Rivet/Projections/IdentifiedFinalState.hh"
+#include "Rivet/Projections/DressedLeptons.hh"
 #include "Rivet/Projections/FastJets.hh"
 #include "Rivet/Projections/ZFinder.hh"
-#include "Rivet/Projections/DressedLeptons.hh"
 #include "DataFormats/Math/interface/LorentzVector.h"
 #include "DataFormats/HepMCCandidate/interface/GenParticle.h"
 #include "TLorentzVector.h"
@@ -15,8 +13,118 @@
 //#define Check
 
 namespace Rivet {
+
+  typedef std::vector<DressedLepton> DLcollection;
   
+  // adapt the ZFinder projection to this analysis selection criteria
+  class ThisZFinder : public FinalState{
+    
+  public:
+    ThisZFinder(const FinalState& inputfs,
+                const Cut & fsCut,
+                PdgId pid,
+                double minmass, double maxmass,
+                double dRmax)
+    {
+      setName("ThisZFinder");
+      
+      _minmass = minmass;
+      _maxmass = maxmass;
+      _pid = pid;
+      
+      IdentifiedFinalState bareleptons(inputfs);
+      bareleptons.acceptIdPair(_pid);
+      DressedLeptons leptons(inputfs, bareleptons, dRmax, fsCut, true, false);
+      addProjection(leptons, "DressedLeptons");
+      
+      VetoedFinalState remainingFS;
+      remainingFS.addVetoOnThisFinalState(*this);
+      addProjection(remainingFS, "RFS");
+      
+    }
+    
+    DEFAULT_RIVET_PROJ_CLONE(ThisZFinder);
+    
+    const VetoedFinalState& remainingFinalState() const {
+      return getProjection<VetoedFinalState>("RFS");
+    }
+    
+    /// @note Currently either 0 or 1 boson can be found.
+    const Particles& bosons() const { return _bosons; }
+    
+    /// Selected dressed leptons
+    const DLcollection& selectedDLeptons() const { return _selectedDLeptons; }
+
+    /// Clear the projection
+    void clear() {
+      _theParticles.clear();
+      _selectedDLeptons.clear();
+      _bosons.clear();
+    }  
+    
+  protected:
+    /// Apply the projection on the supplied event.
+    //    void project(const Event& e);
+    
+    void project(const Event& e) {
+      
+      clear();
+      
+      const DressedLeptons& leptons = applyProjection<DressedLeptons>(e, "DressedLeptons");
+      
+      /// Select lepton-antilepton pair with highest pt
+      
+      Particle dummy;
+      DressedLepton plus(dummy), minus(dummy);
+      foreach (const DressedLepton& p, leptons.dressedLeptons()){
+        if (p.pdgId()>0 && p.momentum().pt() > plus.momentum().pt()){
+          plus = p;
+        }
+        if (p.pdgId()<0 && p.momentum().pt() > minus.momentum().pt()){
+          minus = p;
+        }
+      }
+      
+      FourMomentum pZ;
+      if (plus.pdgId()>0 && minus.pdgId()<0 ) { pZ = plus.momentum() + minus.momentum(); }
+      else { return; }
+      
+      /// Mass window selection
+      if ( pZ.mass() < _minmass || pZ.mass() > _maxmass ) return;
+      
+      /// define the selected dressed leptons and the corresponding reconstructed candidate boson
+      
+      _selectedDLeptons.push_back(plus);
+      _selectedDLeptons.push_back(minus);
+      
+      _bosons.push_back(Particle(PID::ZBOSON, pZ));
+      
+      /// define the collection of selected particles in the final state
+      
+      _theParticles.push_back(plus.constituentLepton());
+      _theParticles.insert(_theParticles.end(), plus.constituentPhotons().begin(), plus.constituentPhotons().end());
+      
+      _theParticles.push_back(minus.constituentLepton());
+      _theParticles.insert(_theParticles.end(), minus.constituentPhotons().begin(), minus.constituentPhotons().end());
+      
+    }
+    
+  private:
+    
+    /// Mass cuts to apply to clustered leptons
+    double _minmass, _maxmass;
+    /// Lepton flavour
+    PdgId _pid;    
+    
+    /// list of found bosons (currently either 0 or 1)
+    Particles _bosons;
+
+    /// Selected dressed leptons
+    std::vector<DressedLepton> _selectedDLeptons;
+
+  };
   
+
   class CMS_2017_PAS_SMP_14_010 : public Analysis {
   public:
     
@@ -31,19 +139,27 @@ namespace Rivet {
       getLog().setLevel(0);
 #endif      
 
-      const FinalState fs;
-      addProjection(fs, "FS");
-      
-      // projection to find the electrons and muons
-      IdentifiedFinalState part(fs);
-      part.acceptIdPair(PID::ELECTRON);
-      part.acceptIdPair(PID::MUON);
-      addProjection(part, "part");
-      
-      // Get photons to dress leptons
-      IdentifiedFinalState photons(fs);
-      photons.acceptIdPair(PID::PHOTON);
-      addProjection(photons, "photons");
+      FinalState fs; ///< @todo No cuts?
+      VisibleFinalState visfs(fs);
+
+      // ThisZFinder zeeFinder(fs, Cuts::abseta < 2.4 && Cuts::pT > 20*GeV, PID::ELECTRON, 71.0*GeV, 111.0*GeV, 0.1 );
+      // addProjection(zeeFinder, "ZeeFinder");
+
+      // ThisZFinder zmumuFinder(fs, Cuts::abseta < 2.4 && Cuts::pT > 20*GeV, PID::MUON, 71.0*GeV, 111.0*GeV, 0.1 );
+      // addProjection(zmumuFinder, "ZmumuFinder");
+
+      ZFinder zeeFinder(fs, Cuts::abseta < 2.4 && Cuts::pT > 20*GeV, PID::ELECTRON, 71.0*GeV, 111.0*GeV, 0.1 );
+      addProjection(zeeFinder, "ZeeFinder");
+
+      ZFinder zmumuFinder(fs, Cuts::abseta < 2.4 && Cuts::pT > 20*GeV, PID::MUON, 71.0*GeV, 111.0*GeV, 0.1 );
+      addProjection(zmumuFinder, "ZmumuFinder");
+
+      VetoedFinalState jetConstits(visfs);
+      jetConstits.addVetoOnThisFinalState(zeeFinder);
+      jetConstits.addVetoOnThisFinalState(zmumuFinder);
+
+      FastJets akt05Jets(jetConstits, FastJets::ANTIKT, 0.5);
+      addProjection(akt05Jets, "AntiKt05Jets");
       
       //Histograms booking
       
@@ -87,253 +203,169 @@ namespace Rivet {
     /// Perform the per-event analysis
     void analyze(const Event& event) {
             
-      //Event weight
-      const double w = 0.5*event.weight();
+      //      const ThisZFinder& zeeFS = applyProjection<ThisZFinder>(event, "ZeeFinder");
+      //      const ThisZFinder& zmumuFS = applyProjection<ThisZFinder>(event, "ZmumuFinder");
+      const ZFinder& zeeFS = applyProjection<ZFinder>(event, "ZeeFinder");
+      const ZFinder& zmumuFS = applyProjection<ZFinder>(event, "ZmumuFinder");
 
-      double Ht = 0;
-            
-      //Structure to contain original particle, dressed lepton and photons used for dressing
-      struct pt_and_particles {
-        FourMomentum p_part;
-        vector < FourMomentum >lepton_photon;
-      };
-            
-      // struttura che contiene il vettore lepton_photon che contiene l'indice del leptone candidato figlio della Z
-      // e i suoi fotoni e contiene il quadrimomento p_part dell'elettrone rivestito.
-      struct pt_and_particles ele_dres;
-      struct pt_and_particles pos_dres;
-      struct pt_and_particles muon_dres;
-      struct pt_and_particles antimuon_dres;
-            
-      //all leptons
-      vector<Particle> part;
-      part = applyProjection<IdentifiedFinalState>(event, "part").particles();
-      //all photons
-      vector<Particle> photons;
-      photons = applyProjection<IdentifiedFinalState>(event, "photons").particles();
-            
-      //dressed lepton and photons fourmomentum
-      FourMomentum partm;
-      vector <FourMomentum> photonsm;
-            
-      //if no leptons veto
-      if (part.size()==0) vetoEvent;
-            
-      //dressing of each lepton
-      foreach (const Particle& e, part){
-        partm=e.momentum();
-        photonsm.push_back(e.momentum());
-        foreach (const Particle& p, photons){
-          if  (deltaR(p.momentum(),e.momentum())<0.1) {
-            partm+=p.momentum();
-            photonsm.push_back(p.momentum());
-          }
-        }
-                
-        //saving of dressed lepton into the right ID structure
-        if(e.pdgId()==PID::ELECTRON && partm.pt()>20*GeV && partm.pt()>ele_dres.p_part.pt() && partm.abseta()<2.4){
-          ele_dres.p_part=partm;
-          ele_dres.lepton_photon=photonsm;
-        }
-        if(e.pdgId()==-PID::ELECTRON && partm.pt()>20*GeV && partm.pt()>pos_dres.p_part.pt() && partm.abseta()<2.4){
-          pos_dres.p_part=partm;
-          pos_dres.lepton_photon=photonsm;
-        }
-        if(e.pdgId()==PID::MUON && partm.pt()>20*GeV && partm.pt()>muon_dres.p_part.pt() && partm.abseta()<2.4){
-          muon_dres.p_part=partm;
-          muon_dres.lepton_photon=photonsm;
-        }
-        if(e.pdgId()==-PID::MUON && partm.pt()>20*GeV && partm.pt()>antimuon_dres.p_part.pt() && partm.abseta()<2.4){
-          antimuon_dres.p_part=partm;
-          antimuon_dres.lepton_photon=photonsm;
-        }
-                
-        photonsm.clear();
+      const Particles& zees = zeeFS.bosons();
+      const Particles& zmumus = zmumuFS.bosons();
+
+#ifdef DebugLog
+      std::cout << "NEW # ele = " << zees.size() << " # muo = " << zmumus.size() << std::endl;
+      if (zees.size() > 0 ) { std::cout << "NEW " << zees[0].momentum().pt() << std::endl; }
+      if (zmumus.size() > 0 ) { std::cout << "NEW " << zmumus[0].momentum().pt() << std::endl; } 
+#endif
+
+      // We did not find exactly one Z. No good.
+      if (zees.size() + zmumus.size() != 1) {
+        MSG_DEBUG("Did not find exactly one good Z candidate");
+        vetoEvent;
       }
-            
-      //if no good dressed lepton veto
-      if ((ele_dres.lepton_photon.empty() || pos_dres.lepton_photon.empty()) && (muon_dres.lepton_photon.empty() || antimuon_dres.lepton_photon.empty())) vetoEvent;
-            
-      //Z boson fourmomentum
-      FourMomentum ze(add(ele_dres.p_part, pos_dres.p_part));
-      FourMomentum zm(add(muon_dres.p_part, antimuon_dres.p_part));
-            
-      if (ze.mass2()<0 || zm.mass2()<0) vetoEvent;
-            
+
       //event identification depending on mass window
       bool ee_event=false;
       bool mm_event=false;
             
-      if (!ele_dres.lepton_photon.empty() && !pos_dres.lepton_photon.empty() && ze.mass()>71*GeV && ze.mass()<111*GeV) ee_event = true;
-      if (!muon_dres.lepton_photon.empty() && !antimuon_dres.lepton_photon.empty() && zm.mass()>71*GeV && zm.mass()<111*GeV) mm_event = true;
-
-#ifdef DebugLog
-      std::cout << "OLD # ele = " << ee_event << " # muo = " << mm_event << std::endl;
-#endif
-            
-      //if not Z boson veto
-      if (!ee_event && !mm_event) vetoEvent;
+      //      DLcollection theLeptons;
+      //      if (zees.size() == 1) { ee_event = true; theLeptons = zeeFS.selectedDLeptons(); }
+      //      if (zmumus.size() == 1) { mm_event = true; theLeptons = zmumuFS.selectedDLeptons(); }
+      if (zees.size() == 1) { ee_event = true; }
+      if (zmumus.size() == 1) { mm_event = true; }
+      const Particles& theLeptons = zees.size() ? zeeFS.constituents() : zmumuFS.constituents();
 
 #ifdef Check
-      //if both flavours produce Z candidate veto
-      if (ee_event && mm_event) vetoEvent;
-
       if ( ee_event || mm_event ) { count1 = count1 + 1 ; }
 #endif
 #ifdef DebugLog
-      std::cout << "OLD Z selected" << std::endl;
+      std::cout << "NEW Z selected" << std::endl;
 #endif
 
-      // pseudojet building procedure
-      const FinalState& fs=applyProjection < FinalState > (event, "FS");
+      // Cluster jets
+      // NB. Veto has already been applied on leptons and photons used for dressing
+      const FastJets& fj = applyProjection<FastJets>(event, "AntiKt05Jets");
+      const Jets& jets = fj.jetsByPt(Cuts::abseta < 2.4 && Cuts::pT > 30*GeV);
 
-      std::vector < fastjet::PseudoJet > vecs;
-      vector < Particle > part_jets;
-      int l=0;
-            
-      foreach (const Particle& p, fs.particles()) {
-        if (fabs(p.pdgId())!=PID::NU_E && fabs(p.pdgId())!=PID::NU_MU && fabs(p.pdgId())!=PID::NU_TAU  ) {
-          bool overcount=false;
-          if (mm_event){
-            int psize1=muon_dres.lepton_photon.size();
-            int psize2=antimuon_dres.lepton_photon.size();
-            for (int j=0;j<psize1;j++){
-              if (p.momentum()==muon_dres.lepton_photon[j]) overcount=true;
-            }
-            for (int j=0;j<psize2;j++){
-              if (p.momentum()==antimuon_dres.lepton_photon[j]) overcount=true;
-            }
-          }
-          if (ee_event) {
-            int psize3=ele_dres.lepton_photon.size();
-            int psize4=pos_dres.lepton_photon.size();
-            for (int j=0;j<psize3;j++){
-              if (p.momentum()==ele_dres.lepton_photon[j]) overcount=true;
-            }
-            for (int j=0;j<psize4;j++){
-              if (p.momentum()==pos_dres.lepton_photon[j]) overcount=true;
-            }
-          }
-          if (overcount==false && (ee_event || mm_event)){
-            fastjet::PseudoJet pseudoJet(p.momentum().px(), p.momentum().py(), p.momentum().pz(), p.momentum().E());
-            pseudoJet.set_user_index(l);
-            vecs.push_back(pseudoJet);
-            part_jets.push_back(p);
-            l++;
+      // Perform lepton-jet overlap and HT calculation
+      double Ht = 0;
+      Jets goodjets;
+      foreach (const Jet& j, jets) {
+        // Decide if this jet is "good", i.e. isolated from the leptons
+        /// @todo Nice use-case for any() and a C++11 lambda
+        bool overlap = false;
+        foreach (const Particle& l, theLeptons) {
+          if (Rivet::deltaR(j, l) < 0.5) {
+            overlap = true;
+            break;
           }
         }
-      }
-            
-      //jet building
-      fastjet::ClusterSequence cseq(vecs, fastjet::JetDefinition(fastjet::antikt_algorithm, 0.5));
-      vector < fastjet::PseudoJet > jets = sorted_by_pt(cseq.inclusive_jets(30.0));
-      vector < fastjet::PseudoJet > jet_final;
-      vector < fastjet::PseudoJet > jb_final;
-            
-      //identification of "good" jets and bjets
-            
-#ifdef Check      
-      bool jet_found = false;
-#endif
 
-      foreach (const Jet& j, jets) {
+        // Fill HT and good-jets collection
+        if (overlap) continue;
+        goodjets.push_back(j);
+        Ht += j.pT();
+      }
+
+      // We don't care about events with no isolated jets
+      if (goodjets.empty()) {
+        MSG_DEBUG("No jets in event");
+        vetoEvent;
+      }
+
+#ifdef Check
+      count2 = count2+1;
+#endif
+            
+      Jets jb_final;
+            
+      //identification of bjets
+            
+      foreach (const Jet& j, goodjets) {
         bool bjet_found = false;
         bool bjet_found1 = false;
-        //trovo i jet buoni
-        if ((j.abseta() < 2.4 && j.perp() > 30) && ((ee_event && deltaR(j.momentum(),ele_dres.p_part)>0.5 && deltaR(j.momentum(),pos_dres.p_part)>0.5) || (mm_event && deltaR(j.momentum(),muon_dres.p_part)>0.5 && deltaR(j.momentum(),antimuon_dres.p_part)>0.5))) {
-          jet_final.push_back(j);
-#ifdef Check      
-          jet_found=true;
-#endif
-                    
-          Ht = Ht + j.perp();
-          FourMomentum pim=j.momentum();
-                    
-          foreach (const fastjet::PseudoJet&  c, cseq.constituents(j)) {
-            const Particle & part = part_jets.at(c.user_index());
-            const PdgId pid = part.pdgId();
-            if (((abs(pid)/100)%10 == 5 ||(abs(pid)/1000)%10 == 5) && deltaR(j,part.momentum().eta(),part.momentum().phi())<0.5) bjet_found = true;
-            HepMC::GenVertex * gv = part.genParticle()->production_vertex();
-            if (gv) {
-              foreach (const GenParticle * pi, Rivet::particles(gv, HepMC::ancestors)) {
-                const PdgId pid2 = pi->pdg_id();
-                                
-                if (((abs(pid2)/100)%10 == 5 || (abs(pid2)/1000)%10 == 5) && (pi->status()>0 && pi->status()<4)) {
-                  bjet_found = true;
-                  pim=pi->momentum();
-                }
-              }
+        
+        FourMomentum pim=j.momentum();
+        
+        foreach (const Particle& part, j.constituents()) {
+          if ( part.hasBottom() && deltaR(j,part.momentum().eta(),part.momentum().phi())<0.5) bjet_found = true;
+          GenVertex* prodVtx = part.genParticle()->production_vertex();
+          if (prodVtx == NULL) continue;
+          foreach (const GenParticle* ancestor, particles(prodVtx, HepMC::ancestors)) {
+            const PdgId pid = ancestor->pdg_id();
+            if (ancestor->status() == 2 && (PID::isHadron(pid) && PID::hasBottom(pid))) {
+              bjet_found = true;
+              pim=ancestor->momentum();
+              break;
             }
-            if (bjet_found && deltaR(j,pim.eta(),pim.phi())<0.5) bjet_found1=true;
-          }
-                    
-          if (bjet_found1) {
-            jb_final.push_back(j);
-          }
-                    
+          } 
+          if (bjet_found && deltaR(j,pim.eta(),pim.phi())<0.5) bjet_found1=true;
         }
+        
+        if (bjet_found1) {
+          jb_final.push_back(j);
+        }
+        
       }
-
-#ifdef Check      
-      if ( jet_found) { count2 = count2+1; }
-#endif
+            
+      //Event weight
+      const double w = 0.5*event.weight();
             
       //histogram filling
 
-      if ((ee_event || mm_event) && jet_final.size() > 0) {
-
+      if ((ee_event || mm_event) && goodjets.size() > 0) {
+        
 #ifdef DebugLog      
         std::string flavour;
         double mass(0.), ptz(0.);
-        if ( ee_event ) { flavour = "EE" ; mass = ze.mass() ; ptz = ze.pt() ; };
-        if ( mm_event ) { flavour = "MM" ; mass = zm.mass() ; ptz = zm.pt() ; };
-        std::cout << "OLD " << flavour << " " << event.genEvent()->event_number() << std::setfill(' ') 
+        if ( ee_event ) { flavour = "EE" ; mass = zees[0].momentum().mass() ; ptz = zees[0].momentum().pt() ; };
+        if ( mm_event ) { flavour = "MM" ; mass = zmumus[0].momentum().mass() ; ptz = zmumus[0].momentum().pt() ; };
+        std::cout << "NEW " << flavour << " " << event.genEvent()->event_number() << std::setfill(' ') 
                   << std::setw(14) << std::fixed << std::setprecision(3) << mass 
                   << std::setw(14) << std::fixed << std::setprecision(3) << ptz
-                  << std::setw(14) << std::fixed << std::setprecision(3) << jet_final.size()
+                  << std::setw(14) << std::fixed << std::setprecision(3) << goodjets.size()
                   << std::setw(14) << std::fixed << std::setprecision(3) << jb_final.size()
                   << std::endl;
 #endif
-        
-        FourMomentum j1(jet_final[0].e(),jet_final[0].px(),jet_final[0].py(),jet_final[0].pz());
+
+        FourMomentum j1(goodjets[0].momentum());
 
         _h_first_jet_pt->fill(j1.pt(),w);
         _h_first_jet_abseta->fill(fabs(j1.eta()),w);
-        if ( ee_event ) _h_Z_pt->fill(ze.pt(),w);
-        if ( mm_event ) _h_Z_pt->fill(zm.pt(),w);
+        if ( ee_event ) _h_Z_pt->fill(zees[0].pt(),w);
+        if ( mm_event ) _h_Z_pt->fill(zmumus[0].pt(),w);
         _h_HT->fill(Ht,w);
-        if ( ee_event ) _h_Dphi_Zj->fill(deltaPhi(ze, j1),w);
-        if ( mm_event ) _h_Dphi_Zj->fill(deltaPhi(zm, j1),w);
+        if ( ee_event ) _h_Dphi_Zj->fill(deltaPhi(zees[0], j1),w);
+        if ( mm_event ) _h_Dphi_Zj->fill(deltaPhi(zmumus[0], j1),w);
         
         if ( jb_final.size() > 0 ) { 
 
-          FourMomentum b1(jb_final[0].e(),jb_final[0].px(),jb_final[0].py(),jb_final[0].pz());
+          FourMomentum b1(jb_final[0].momentum());
 
           _h_bjet_multiplicity->fill(1.,w);
 
           _h_first_bjet_pt_b->fill(b1.pt(),w);
           _h_first_bjet_abseta_b->fill(fabs(b1.eta()),w);
-          if ( ee_event ) _h_Z_pt_b->fill(ze.pt(),w);
-          if ( mm_event ) _h_Z_pt_b->fill(zm.pt(),w);
+          if ( ee_event ) _h_Z_pt_b->fill(zees[0].pt(),w);
+          if ( mm_event ) _h_Z_pt_b->fill(zmumus[0].pt(),w);
           _h_HT_b->fill(Ht,w);
-          if ( ee_event ) _h_Dphi_Zb_b->fill(deltaPhi(ze, b1.phi()),w);
-          if ( mm_event ) _h_Dphi_Zb_b->fill(deltaPhi(zm, b1.phi()),w);
+          if ( ee_event ) _h_Dphi_Zb_b->fill(deltaPhi(zees[0], b1.phi()),w);
+          if ( mm_event ) _h_Dphi_Zb_b->fill(deltaPhi(zmumus[0], b1.phi()),w);
 
           if ( jb_final.size() > 1 ) {
 
-            FourMomentum b2(jb_final[1].e(),jb_final[1].px(),jb_final[1].py(),jb_final[1].pz());
+            FourMomentum b2(jb_final[1].momentum());
 
             _h_bjet_multiplicity->fill(2.,w);
 
             _h_first_bjet_pt_bb->fill(b1.pt(),w);
             _h_second_bjet_pt_bb->fill(b2.pt(),w);
-            if ( ee_event ) _h_Z_pt_bb->fill(ze.pt(),w);
-            if ( mm_event ) _h_Z_pt_bb->fill(zm.pt(),w);
+            if ( ee_event ) _h_Z_pt_bb->fill(zees[0].pt(),w);
+            if ( mm_event ) _h_Z_pt_bb->fill(zmumus[0].pt(),w);
 
             FourMomentum bb = add(b1,b2);
             FourMomentum Zbb;
-            if (ee_event) Zbb = add(ze,bb);
-            if (mm_event) Zbb = add(zm,bb);
+            if (ee_event) Zbb = add(zees[0],bb);
+            if (mm_event) Zbb = add(zmumus[0],bb);
 
             _h_bb_mass_bb->fill(bb.mass(),w);
             _h_Zbb_mass_bb->fill(Zbb.mass(),w);
@@ -343,12 +375,12 @@ namespace Rivet {
 
             double DR_Z_b1(0.), DR_Z_b2(0.);
             if ( ee_event ) {
-              DR_Z_b1 = deltaR(ze,b1);
-              DR_Z_b2 = deltaR(ze,b2);
+              DR_Z_b1 = deltaR(zees[0],b1);
+              DR_Z_b2 = deltaR(zees[0],b2);
             }
             if ( mm_event ) {
-              DR_Z_b1 = deltaR(zm,b1);
-              DR_Z_b2 = deltaR(zm,b2);
+              DR_Z_b1 = deltaR(zmumus[0],b1);
+              DR_Z_b2 = deltaR(zmumus[0],b2);
             }
 
             double DR_Zb_min = DR_Z_b1;
@@ -369,6 +401,7 @@ namespace Rivet {
       }
 
     }
+   
         
     /// Normalise histograms etc., after the run
     void finalize() {
