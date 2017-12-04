@@ -183,7 +183,7 @@ TString xlabel( Int_t DistributionId ) {
 
   switch ( DistributionId ) {
   case 1:
-    xname = "PT(b) "; break;
+    xname = "PT(b)"; break;
   case 2:
     xname = "PT(b/j)"; break;
   case 3:  
