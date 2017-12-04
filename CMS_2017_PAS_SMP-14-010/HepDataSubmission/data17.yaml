@@ -1,6 +1,6 @@
 independent_variables:
-- header: {name: DR(bb), units: }
-values:
+- header: {name: DR(bb), units: A.U.}
+  values:
   - {low:           0.00, high:           0.50}
   - {low:           0.50, high:           1.00}
   - {low:           1.00, high:           1.50}
@@ -13,57 +13,57 @@ values:
   - {low:           4.50, high:           5.00}
 dependent_variables:
 - header: {name: D(SIG(fiducial))/DR(bb), units: PB}
-qualifiers:
-- {name: RE, value: P P --> Z0 < LEPTON+ LEPTON- > + >= 2 B JETS}
-- {name: SQRT(S), units: GEV, value: 8000}
-values:
- - value:             0
-   errors:
-   - {symerror:             0, label: tot}
-   - {symerror:             0, label: stat}
-   - {symerror:             0, label: syst}
- - value:         0.058
-   errors:
-   - {symerror:         0.015, label: tot}
-   - {symerror:         0.007, label: stat}
-   - {symerror:         0.014, label: syst}
- - value:         0.067
-   errors:
-   - {symerror:         0.011, label: tot}
-   - {symerror:         0.005, label: stat}
-   - {symerror:         0.009, label: syst}
- - value:         0.092
-   errors:
-   - {symerror:         0.018, label: tot}
-   - {symerror:         0.007, label: stat}
-   - {symerror:         0.017, label: syst}
- - value:         0.108
-   errors:
-   - {symerror:         0.019, label: tot}
-   - {symerror:         0.009, label: stat}
-   - {symerror:         0.017, label: syst}
- - value:         0.150
-   errors:
-   - {symerror:         0.024, label: tot}
-   - {symerror:         0.011, label: stat}
-   - {symerror:         0.021, label: syst}
- - value:         0.119
-   errors:
-   - {symerror:         0.017, label: tot}
-   - {symerror:         0.009, label: stat}
-   - {symerror:         0.015, label: syst}
- - value:        0.0399
-   errors:
-   - {symerror:        0.0083, label: tot}
-   - {symerror:        0.0034, label: stat}
-   - {symerror:        0.0076, label: syst}
- - value:         0.017
-   errors:
-   - {symerror:         0.012, label: tot}
-   - {symerror:         0.002, label: stat}
-   - {symerror:         0.012, label: syst}
- - value:        0.0032
-   errors:
-   - {symerror:        0.0067, label: tot}
-   - {symerror:        0.0006, label: stat}
-   - {symerror:        0.0066, label: syst}
+  qualifiers:
+  - {name: RE, value: P P --> Z0 < LEPTON+ LEPTON- > + >= 2 B JETS}
+  - {name: SQRT(S), units: GEV, value: 8000}
+  values:
+  - value:             0
+    errors:
+    - {symerror:             0, label: tot}
+    - {symerror:             0, label: stat}
+    - {symerror:             0, label: syst}
+  - value:         0.058
+    errors:
+    - {symerror:         0.015, label: tot}
+    - {symerror:         0.007, label: stat}
+    - {symerror:         0.014, label: syst}
+  - value:         0.067
+    errors:
+    - {symerror:         0.011, label: tot}
+    - {symerror:         0.005, label: stat}
+    - {symerror:         0.009, label: syst}
+  - value:         0.092
+    errors:
+    - {symerror:         0.018, label: tot}
+    - {symerror:         0.007, label: stat}
+    - {symerror:         0.017, label: syst}
+  - value:         0.108
+    errors:
+    - {symerror:         0.019, label: tot}
+    - {symerror:         0.009, label: stat}
+    - {symerror:         0.017, label: syst}
+  - value:         0.150
+    errors:
+    - {symerror:         0.024, label: tot}
+    - {symerror:         0.011, label: stat}
+    - {symerror:         0.021, label: syst}
+  - value:         0.119
+    errors:
+    - {symerror:         0.017, label: tot}
+    - {symerror:         0.009, label: stat}
+    - {symerror:         0.015, label: syst}
+  - value:        0.0399
+    errors:
+    - {symerror:        0.0083, label: tot}
+    - {symerror:        0.0034, label: stat}
+    - {symerror:        0.0076, label: syst}
+  - value:         0.017
+    errors:
+    - {symerror:         0.012, label: tot}
+    - {symerror:         0.002, label: stat}
+    - {symerror:         0.012, label: syst}
+  - value:        0.0032
+    errors:
+    - {symerror:        0.0067, label: tot}
+    - {symerror:        0.0006, label: stat}
+    - {symerror:        0.0066, label: syst}

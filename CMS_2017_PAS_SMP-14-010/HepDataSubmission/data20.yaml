@@ -1,21 +1,21 @@
 independent_variables:
-- header: {name: MINIMAL NUMBER OF B JETS, units: }
-values:
+- header: {name: MINIMAL NUMBER OF B JETS, units: A.U.}
+  values:
   - {low:         0.5, high:         1.5}
   - {low:         1.5, high:         2.5}
 dependent_variables:
 - header: {name: SIG(fiducial), units: PB}
-qualifiers:
-- {name: RE, value: P P --> Z0 < LEPTON+ LEPTON- > + >= N B JET}
-- {name: SQRT(S), units: GEV, value: 8000}
-values:
- - value:          3.55
-   errors:
-   - {symerror:          0.24, label: tot}
-   - {symerror:          0.12, label: stat}
-   - {symerror:          0.21, label: syst}
- - value:          0.331
-   errors:
-   - {symerror:          0.037, label: tot}
-   - {symerror:          0.011, label: stat}
-   - {symerror:          0.035, label: syst}
+  qualifiers:
+  - {name: RE, value: P P --> Z0 < LEPTON+ LEPTON- > + >= N B JET}
+  - {name: SQRT(S), units: GEV, value: 8000}
+  values:
+  - value:          3.55
+    errors:
+    - {symerror:          0.24, label: tot}
+    - {symerror:          0.12, label: stat}
+    - {symerror:          0.21, label: syst}
+  - value:          0.331
+    errors:
+    - {symerror:          0.037, label: tot}
+    - {symerror:          0.011, label: stat}
+    - {symerror:          0.035, label: syst}

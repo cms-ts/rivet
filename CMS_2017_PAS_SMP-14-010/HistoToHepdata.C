@@ -238,9 +238,9 @@ TString xunits( Int_t DistributionId ) {
   case 2:
     xunit = "GEV"; break;
   case 3:  
-    xunit = ""; break;
+    xunit = "A.U."; break;
   case 4:  
-    xunit = ""; break;
+    xunit = "A.U."; break;
   case 5:
     xunit = "GEV"; break;
   case 6:
@@ -252,7 +252,7 @@ TString xunits( Int_t DistributionId ) {
   case 9:
     xunit = "RAD"; break;
   case 10:
-    xunit = ""; break;
+    xunit = "A.U."; break;
   case 11:
     xunit = "GEV"; break;
   case 12:  
@@ -266,11 +266,11 @@ TString xunits( Int_t DistributionId ) {
   case 16:  
     xunit = "RAD"; break;
   case 17:  
-    xunit = ""; break;
+    xunit = "A.U."; break;
   case 18:  
-    xunit = ""; break;
+    xunit = "A.U."; break;
   case 19:  
-    xunit = ""; break;
+    xunit = "A.U."; break;
   default:
     xunit = "Dummy";
   }
@@ -495,7 +495,7 @@ void HistoToHepdata( Int_t DistributionId = 1,
 
       std::cout << "independent_variables:" << std::endl;
       std::cout << "- header: {name: " << xname << ", units: " << xunit << "}" << std::endl;
-      std::cout << "values:" << std::endl;
+      std::cout << "  values:" << std::endl;
     
       for ( Int_t iBin = 1; iBin <= nbins; iBin++ ) {
         std::cout << "  - {low: " << std::setw(14) << std::fixed << std::setprecision(2) << xxlow_[iBin-1] 
@@ -509,21 +509,21 @@ void HistoToHepdata( Int_t DistributionId = 1,
     
       std::cout << "dependent_variables:" << std::endl;
       std::cout << "- header: {name: " << yname << ", units: " << yunit << "}" << std::endl;
-      std::cout << "qualifiers:" << std::endl;
-      std::cout << "- {name: RE, value: " << requa << "}" << std::endl;
-      std::cout << "- {name: SQRT(S), units: GEV, value: 8000}" << std::endl;
-      std::cout << "values:" << std::endl;
+      std::cout << "  qualifiers:" << std::endl;
+      std::cout << "  - {name: RE, value: " << requa << "}" << std::endl;
+      std::cout << "  - {name: SQRT(S), units: GEV, value: 8000}" << std::endl;
+      std::cout << "  values:" << std::endl;
     
       for ( Int_t iBin = 1; iBin <= nbins; iBin++ ) {
       
         Int_t precision = definePrecision(yyErrTot_[iBin-1],2);
         //      precision = 6;
 
-        std::cout << " - value:" << std::setw(14) << std::fixed << std::setprecision(precision) << yyval_[iBin-1] << std::endl;
-        std::cout << "   errors:" << std::endl;
-        std::cout << "   - {symerror:" << std::setw(14) << std::fixed << std::setprecision(precision) << yyErrTot_[iBin-1] << ", label: tot}" << std::endl;
-        std::cout << "   - {symerror:" << std::setw(14) << std::fixed << std::setprecision(precision) << yyErrStat_[iBin-1] << ", label: stat}" << std::endl;
-        std::cout << "   - {symerror:" << std::setw(14) << std::fixed << std::setprecision(precision) << yyErrSyst_[iBin-1] << ", label: syst}" << std::endl;
+        std::cout << "  - value:" << std::setw(14) << std::fixed << std::setprecision(precision) << yyval_[iBin-1] << std::endl;
+        std::cout << "    errors:" << std::endl;
+        std::cout << "    - {symerror:" << std::setw(14) << std::fixed << std::setprecision(precision) << yyErrTot_[iBin-1] << ", label: tot}" << std::endl;
+        std::cout << "    - {symerror:" << std::setw(14) << std::fixed << std::setprecision(precision) << yyErrStat_[iBin-1] << ", label: stat}" << std::endl;
+        std::cout << "    - {symerror:" << std::setw(14) << std::fixed << std::setprecision(precision) << yyErrSyst_[iBin-1] << ", label: syst}" << std::endl;
 
       }
       
