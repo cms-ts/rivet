@@ -338,23 +338,23 @@ TString yunits( Int_t DistributionId ) {
   case 1:
     yunit = "PB/GEV"; break;
   case 2:
-    yunit = "%"; break;
+    yunit = "\"%\""; break;
   case 3:  
     yunit = "PB"; break;
   case 4:  
-    yunit = "%"; break;
+    yunit = "\"%\""; break;
   case 5:
     yunit = "PB/GEV"; break;
   case 6:
-    yunit = "%"; break;
+    yunit = "\"%\""; break;
   case 7:
     yunit = "PB/GEV"; break;
   case 8:
-    yunit = "%"; break;
+    yunit = "\"%\""; break;
   case 9:
     yunit = "PB/RAD"; break;
   case 10:
-    yunit = "%"; break;
+    yunit = "\"%\""; break;
   case 11:
     yunit = "PB/GEV"; break;
   case 12:  

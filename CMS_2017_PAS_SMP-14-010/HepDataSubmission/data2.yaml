@@ -16,7 +16,7 @@ values:
   - {low:         204.20, high:         244.40}
   - {low:         244.40, high:         311.40}
 dependent_variables:
-- header: {name: B JET/INCLUSIVE JETS D(SIG(fiducial))/DPT(b/j) RATIO, units: %}
+- header: {name: B JET/INCLUSIVE JETS D(SIG(fiducial))/DPT(b/j) RATIO, units: "%"}
 qualifiers:
 - {name: RE, value: P P --> Z0 < LEPTON+ LEPTON- > + >= 1 B JET}
 - {name: SQRT(S), units: GEV, value: 8000}
