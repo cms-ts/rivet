@@ -1,0 +1,54 @@
+Name: CMS_2017_I1499471
+Year: 2017
+Summary: Measurements of the associated production of a Z boson and b jets in pp collisions at $\sqrt{s} = 8$ TeV
+Experiment: CMS
+Collider: LHC
+SpiresID: I1499471
+Status: UNVALIDATED
+Authors:
+ - Your Name Fabio Cossutti (fabio.cossutti@ts.infn.it)
+References:
+#- '<Example: Eur.Phys.J. C76 (2016) no.7, 392>'
+#- '<Example: DOI:10.1140/epjc/s10052-016-4184-8>'
+- https://arxiv.org/abs/1611.06507
+- https://inspirehep.net/record/1499471        
+RunInfo: 'Run MC generators with Z decaying leptonically into both electrons and muons at 8 TeV CoM energy.
+For jet-flavour inclusive samples, order of 20 million unweighted events can give a reasonable global comparison, 
+but precision in the high jet multiplicity region/high jet pt may require substantially larger samples or statistical
+enhancement of high jet multiplicities.'
+NumEvents: 20000000
+NeedCrossSection: yes
+Beams: [p+, p+] 
+Energies: [8000]
+Description:
+'Measurements of the associated production of a Z boson with at least
+one jet originating from a b quark in proton-proton collisions
+at $\sqrt{s} = 8$ TeV are presented. Differential cross sections are
+measured with data collected by the CMS experiment corresponding to an
+integrated luminosity of 19.8 $\text{fb}^{-1}$. Z bosons are reconstructed
+through their decays to electrons and muons. Cross sections are
+measured as a function of observables characterizing the kinematics of
+the b jet and the Z boson. Ratios of differential cross
+sections for the associated production with at least one b jet
+to the associated production with any jet are also presented.  The
+production of a Z boson with at least two b jets is investigated,
+and differential cross sections are measured for the dijet system.
+Results are compared to theoretical predictions, testing two different
+flavour schemes for the choice of initial-state partons.'
+BibKey: Khachatryan:2016iob
+BibTeX: '@article{Khachatryan:2016iob,
+      author         = "Khachatryan, Vardan and others",
+      title          = "{Measurements of the associated production of a Z boson
+                        and b jets in pp collisions at $\sqrt{s}$ = 8 TeV}",
+      collaboration  = "CMS",
+      journal        = "Submitted to: Eur. Phys. J. C",
+      year           = "2016",
+      eprint         = "1611.06507",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ex",
+      reportNumber   = "CMS-SMP-14-010, CERN-EP-2016-254",
+      SLACcitation   = "%%CITATION = ARXIV:1611.06507;%%"
+}'
+ToDo:
+ - Implement the analysis, test it, remove this ToDo, and mark as VALIDATED :-)
+

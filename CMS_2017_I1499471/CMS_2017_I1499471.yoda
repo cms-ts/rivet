@@ -1,6 +1,6 @@
-# BEGIN YODA_SCATTER2D /REF/CMS_2017_PAS_SMP_14_010/d01-x01-y01
-Path=/REF/CMS_2017_PAS_SMP_14_010/d01-x01-y01
-Title=CMS, Leading b jet transverse momentum, at least one b jet
+# BEGIN YODA_SCATTER2D /REF/CMS_2017_I1499471/d01-x01-y01
+Path=/REF/CMS_2017_I1499471/d01-x01-y01
+Title=CMS, 8 TeV, Leading b jet transverse momentum, at least one b jet
 Type=Scatter2D
 # xval   xerr-   xerr+   yval   yerr-   yerr+
      36.700000      6.700000      6.700000        0.1075        0.0085        0.0085
@@ -20,9 +20,9 @@ Type=Scatter2D
 # END YODA_SCATTER2D
 
 
-# BEGIN YODA_SCATTER2D /REF/CMS_2017_PAS_SMP_14_010/d02-x01-y01
-Path=/REF/CMS_2017_PAS_SMP_14_010/d02-x01-y01
-Title=CMS, Leading b/inclusive jet transverse momentum ratio, at least one b jet over inclusive
+# BEGIN YODA_SCATTER2D /REF/CMS_2017_I1499471/d02-x01-y01
+Path=/REF/CMS_2017_I1499471/d02-x01-y01
+Title=CMS, 8 TeV, Leading b/inclusive jet transverse momentum ratio, at least one b jet over inclusive
 Type=Scatter2D
 # xval   xerr-   xerr+   yval   yerr-   yerr+
      36.700000      6.700000      6.700000          4.72          0.46          0.46
@@ -42,9 +42,9 @@ Type=Scatter2D
 # END YODA_SCATTER2D
 
 
-# BEGIN YODA_SCATTER2D /REF/CMS_2017_PAS_SMP_14_010/d03-x01-y01
-Path=/REF/CMS_2017_PAS_SMP_14_010/d03-x01-y01
-Title=CMS, Leading b jet absolute pseudorapidity, at least one b jet
+# BEGIN YODA_SCATTER2D /REF/CMS_2017_I1499471/d03-x01-y01
+Path=/REF/CMS_2017_I1499471/d03-x01-y01
+Title=CMS, 8 TeV, Leading b jet absolute pseudorapidity, at least one b jet
 Type=Scatter2D
 # xval   xerr-   xerr+   yval   yerr-   yerr+
       0.156250      0.156250      0.156250          1.96          0.18          0.18
@@ -58,9 +58,9 @@ Type=Scatter2D
 # END YODA_SCATTER2D
 
 
-# BEGIN YODA_SCATTER2D /REF/CMS_2017_PAS_SMP_14_010/d04-x01-y01
-Path=/REF/CMS_2017_PAS_SMP_14_010/d04-x01-y01
-Title=CMS, Leading b/inclusive jet absolute pseudorapidity ratio, at least one b jet over inclusive
+# BEGIN YODA_SCATTER2D /REF/CMS_2017_I1499471/d04-x01-y01
+Path=/REF/CMS_2017_I1499471/d04-x01-y01
+Title=CMS, 8 TeV, Leading b/inclusive jet absolute pseudorapidity ratio, at least one b jet over inclusive
 Type=Scatter2D
 # xval   xerr-   xerr+   yval   yerr-   yerr+
       0.156250      0.156250      0.156250          4.91          0.44          0.44
@@ -74,9 +74,9 @@ Type=Scatter2D
 # END YODA_SCATTER2D
 
 
-# BEGIN YODA_SCATTER2D /REF/CMS_2017_PAS_SMP_14_010/d05-x01-y01
-Path=/REF/CMS_2017_PAS_SMP_14_010/d05-x01-y01
-Title=CMS, Z boson pt, at least one b jet
+# BEGIN YODA_SCATTER2D /REF/CMS_2017_I1499471/d05-x01-y01
+Path=/REF/CMS_2017_I1499471/d05-x01-y01
+Title=CMS, 8 TeV, Z boson pt, at least one b jet
 Type=Scatter2D
 # xval   xerr-   xerr+   yval   yerr-   yerr+
       5.000000      5.000000      5.000000        0.0095        0.0023        0.0023
@@ -101,9 +101,9 @@ Type=Scatter2D
 # END YODA_SCATTER2D
 
 
-# BEGIN YODA_SCATTER2D /REF/CMS_2017_PAS_SMP_14_010/d06-x01-y01
-Path=/REF/CMS_2017_PAS_SMP_14_010/d06-x01-y01
-Title=CMS, Z boson pt ratio, at least one b jet over inclusive
+# BEGIN YODA_SCATTER2D /REF/CMS_2017_I1499471/d06-x01-y01
+Path=/REF/CMS_2017_I1499471/d06-x01-y01
+Title=CMS, 8 TeV, Z boson pt ratio, at least one b jet over inclusive
 Type=Scatter2D
 # xval   xerr-   xerr+   yval   yerr-   yerr+
       5.000000      5.000000      5.000000           4.9           1.5           1.5
@@ -128,9 +128,9 @@ Type=Scatter2D
 # END YODA_SCATTER2D
 
 
-# BEGIN YODA_SCATTER2D /REF/CMS_2017_PAS_SMP_14_010/d07-x01-y01
-Path=/REF/CMS_2017_PAS_SMP_14_010/d07-x01-y01
-Title=CMS, HT, at least one b jet
+# BEGIN YODA_SCATTER2D /REF/CMS_2017_I1499471/d07-x01-y01
+Path=/REF/CMS_2017_I1499471/d07-x01-y01
+Title=CMS, 8 TeV, HT, at least one b jet
 Type=Scatter2D
 # xval   xerr-   xerr+   yval   yerr-   yerr+
      39.700000      9.700000      9.700000        0.0680        0.0074        0.0074
@@ -151,9 +151,9 @@ Type=Scatter2D
 # END YODA_SCATTER2D
 
 
-# BEGIN YODA_SCATTER2D /REF/CMS_2017_PAS_SMP_14_010/d08-x01-y01
-Path=/REF/CMS_2017_PAS_SMP_14_010/d08-x01-y01
-Title=CMS, HT ratio, at least one b jet over inclusive
+# BEGIN YODA_SCATTER2D /REF/CMS_2017_I1499471/d08-x01-y01
+Path=/REF/CMS_2017_I1499471/d08-x01-y01
+Title=CMS, 8 TeV, HT ratio, at least one b jet over inclusive
 Type=Scatter2D
 # xval   xerr-   xerr+   yval   yerr-   yerr+
      39.700000      9.700000      9.700000          3.76          0.49          0.49
@@ -174,9 +174,9 @@ Type=Scatter2D
 # END YODA_SCATTER2D
 
 
-# BEGIN YODA_SCATTER2D /REF/CMS_2017_PAS_SMP_14_010/d09-x01-y01
-Path=/REF/CMS_2017_PAS_SMP_14_010/d09-x01-y01
-Title=CMS, DeltaPhi_Zb, at least one b jet
+# BEGIN YODA_SCATTER2D /REF/CMS_2017_I1499471/d09-x01-y01
+Path=/REF/CMS_2017_I1499471/d09-x01-y01
+Title=CMS, 8 TeV, DeltaPhi_Zb, at least one b jet
 Type=Scatter2D
 # xval   xerr-   xerr+   yval   yerr-   yerr+
       0.130900      0.130900      0.130900         0.172         0.022         0.022
@@ -194,9 +194,9 @@ Type=Scatter2D
 # END YODA_SCATTER2D
 
 
-# BEGIN YODA_SCATTER2D /REF/CMS_2017_PAS_SMP_14_010/d10-x01-y01
-Path=/REF/CMS_2017_PAS_SMP_14_010/d10-x01-y01
-Title=CMS, DeltaPhi_Z(b/j) ratio, at least one b jet over inclusive
+# BEGIN YODA_SCATTER2D /REF/CMS_2017_I1499471/d10-x01-y01
+Path=/REF/CMS_2017_I1499471/d10-x01-y01
+Title=CMS, 8 TeV, DeltaPhi_Z(b/j) ratio, at least one b jet over inclusive
 Type=Scatter2D
 # xval   xerr-   xerr+   yval   yerr-   yerr+
       0.130900      0.130900      0.130900           9.2           1.5           1.5
@@ -214,9 +214,9 @@ Type=Scatter2D
 # END YODA_SCATTER2D
 
 
-# BEGIN YODA_SCATTER2D /REF/CMS_2017_PAS_SMP_14_010/d11-x01-y01
-Path=/REF/CMS_2017_PAS_SMP_14_010/d11-x01-y01
-Title=CMS, Leading b jet transverse momentum, at least two b jets
+# BEGIN YODA_SCATTER2D /REF/CMS_2017_I1499471/d11-x01-y01
+Path=/REF/CMS_2017_I1499471/d11-x01-y01
+Title=CMS, 8 TeV, Leading b jet transverse momentum, at least two b jets
 Type=Scatter2D
 # xval   xerr-   xerr+   yval   yerr-   yerr+
      36.700000      6.700000      6.700000        0.0043        0.0020        0.0020
@@ -234,9 +234,9 @@ Type=Scatter2D
 # END YODA_SCATTER2D
 
 
-# BEGIN YODA_SCATTER2D /REF/CMS_2017_PAS_SMP_14_010/d12-x01-y01
-Path=/REF/CMS_2017_PAS_SMP_14_010/d12-x01-y01
-Title=CMS, Subleading b jet transverse momentum, at least two b jets
+# BEGIN YODA_SCATTER2D /REF/CMS_2017_I1499471/d12-x01-y01
+Path=/REF/CMS_2017_I1499471/d12-x01-y01
+Title=CMS, 8 TeV, Subleading b jet transverse momentum, at least two b jets
 Type=Scatter2D
 # xval   xerr-   xerr+   yval   yerr-   yerr+
      34.700000      4.700000      4.700000        0.0219        0.0046        0.0046
@@ -252,9 +252,9 @@ Type=Scatter2D
 # END YODA_SCATTER2D
 
 
-# BEGIN YODA_SCATTER2D /REF/CMS_2017_PAS_SMP_14_010/d13-x01-y01
-Path=/REF/CMS_2017_PAS_SMP_14_010/d13-x01-y01
-Title=CMS, Z boson pt, at least two b jets
+# BEGIN YODA_SCATTER2D /REF/CMS_2017_I1499471/d13-x01-y01
+Path=/REF/CMS_2017_I1499471/d13-x01-y01
+Title=CMS, 8 TeV, Z boson pt, at least two b jets
 Type=Scatter2D
 # xval   xerr-   xerr+   yval   yerr-   yerr+
       5.000000      5.000000      5.000000       0.00083       0.00037       0.00037
@@ -278,9 +278,9 @@ Type=Scatter2D
 # END YODA_SCATTER2D
 
 
-# BEGIN YODA_SCATTER2D /REF/CMS_2017_PAS_SMP_14_010/d14-x01-y01
-Path=/REF/CMS_2017_PAS_SMP_14_010/d14-x01-y01
-Title=CMS, bb system mass, at least two b jets
+# BEGIN YODA_SCATTER2D /REF/CMS_2017_I1499471/d14-x01-y01
+Path=/REF/CMS_2017_I1499471/d14-x01-y01
+Title=CMS, 8 TeV, bb system mass, at least two b jets
 Type=Scatter2D
 # xval   xerr-   xerr+   yval   yerr-   yerr+
      44.230769     14.230769     14.230769       0.00106       0.00032       0.00032
@@ -297,9 +297,9 @@ Type=Scatter2D
 # END YODA_SCATTER2D
 
 
-# BEGIN YODA_SCATTER2D /REF/CMS_2017_PAS_SMP_14_010/d15-x01-y01
-Path=/REF/CMS_2017_PAS_SMP_14_010/d15-x01-y01
-Title=CMS, Zbb system mass, at least two b jets
+# BEGIN YODA_SCATTER2D /REF/CMS_2017_I1499471/d15-x01-y01
+Path=/REF/CMS_2017_I1499471/d15-x01-y01
+Title=CMS, 8 TeV, Zbb system mass, at least two b jets
 Type=Scatter2D
 # xval   xerr-   xerr+   yval   yerr-   yerr+
     212.500000     12.500000     12.500000       0.00144       0.00064       0.00064
@@ -314,9 +314,9 @@ Type=Scatter2D
 # END YODA_SCATTER2D
 
 
-# BEGIN YODA_SCATTER2D /REF/CMS_2017_PAS_SMP_14_010/d16-x01-y01
-Path=/REF/CMS_2017_PAS_SMP_14_010/d16-x01-y01
-Title=CMS, DeltaPhi bb, at least two b jets
+# BEGIN YODA_SCATTER2D /REF/CMS_2017_I1499471/d16-x01-y01
+Path=/REF/CMS_2017_I1499471/d16-x01-y01
+Title=CMS, 8 TeV, DeltaPhi bb, at least two b jets
 Type=Scatter2D
 # xval   xerr-   xerr+   yval   yerr-   yerr+
       0.130900      0.130900      0.130900         0.072         0.037         0.037
@@ -334,9 +334,9 @@ Type=Scatter2D
 # END YODA_SCATTER2D
 
 
-# BEGIN YODA_SCATTER2D /REF/CMS_2017_PAS_SMP_14_010/d17-x01-y01
-Path=/REF/CMS_2017_PAS_SMP_14_010/d17-x01-y01
-Title=CMS, DeltaR bb, at least two b jets
+# BEGIN YODA_SCATTER2D /REF/CMS_2017_I1499471/d17-x01-y01
+Path=/REF/CMS_2017_I1499471/d17-x01-y01
+Title=CMS, 8 TeV, DeltaR bb, at least two b jets
 Type=Scatter2D
 # xval   xerr-   xerr+   yval   yerr-   yerr+
       0.250000      0.250000      0.250000             0             0             0
@@ -352,9 +352,9 @@ Type=Scatter2D
 # END YODA_SCATTER2D
 
 
-# BEGIN YODA_SCATTER2D /REF/CMS_2017_PAS_SMP_14_010/d18-x01-y01
-Path=/REF/CMS_2017_PAS_SMP_14_010/d18-x01-y01
-Title=CMS, DeltaR Zb minimum, at least two b jets
+# BEGIN YODA_SCATTER2D /REF/CMS_2017_I1499471/d18-x01-y01
+Path=/REF/CMS_2017_I1499471/d18-x01-y01
+Title=CMS, 8 TeV, DeltaR Zb minimum, at least two b jets
 Type=Scatter2D
 # xval   xerr-   xerr+   yval   yerr-   yerr+
       0.133333      0.133333      0.133333        0.0078        0.0053        0.0053
@@ -375,9 +375,9 @@ Type=Scatter2D
 # END YODA_SCATTER2D
 
 
-# BEGIN YODA_SCATTER2D /REF/CMS_2017_PAS_SMP_14_010/d19-x01-y01
-Path=/REF/CMS_2017_PAS_SMP_14_010/d19-x01-y01
-Title=CMS, Asymmetry DR Zb max DR Zb min , at least two b jets
+# BEGIN YODA_SCATTER2D /REF/CMS_2017_I1499471/d19-x01-y01
+Path=/REF/CMS_2017_I1499471/d19-x01-y01
+Title=CMS, 8 TeV, Asymmetry DR Zb max DR Zb min , at least two b jets
 Type=Scatter2D
 # xval   xerr-   xerr+   yval   yerr-   yerr+
       0.050000      0.050000      0.050000          1.31          0.20          0.20
@@ -391,9 +391,9 @@ Type=Scatter2D
 # END YODA_SCATTER2D
 
 
-# BEGIN YODA_SCATTER2D /REF/CMS_2017_PAS_SMP_14_010/d20-x01-y01
-Path=/REF/CMS_2017_PAS_SMP_14_010/d20-x01-y01
-Title=CMS, inclusive b jet multiplicity
+# BEGIN YODA_SCATTER2D /REF/CMS_2017_I1499471/d20-x01-y01
+Path=/REF/CMS_2017_I1499471/d20-x01-y01
+Title=CMS, 8 TeV, inclusive b jet multiplicity
 Type=Scatter2D
 # xval   xerr-   xerr+   yval   yerr-   yerr+
       1.000000      0.500000      0.500000          3.55          0.24          0.24
