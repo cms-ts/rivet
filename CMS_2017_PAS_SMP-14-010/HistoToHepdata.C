@@ -117,7 +117,7 @@ TString requali( Int_t DistributionId ) {
   case 18:  
     requa = "P P --> Z0 < LEPTON+ LEPTON- > + >= 2 B JETS"; break;
   case 19:  
-    requa = "P P --> Z0 < LEPTON+ LEPTON- > + >= 2 B JETS";
+    requa = "P P --> Z0 < LEPTON+ LEPTON- > + >= 2 B JETS"; break;
   default:
     requa = "Dummy";
   }
@@ -520,6 +520,7 @@ void HistoToHepdata( Int_t DistributionId = 1,
         //      precision = 6;
 
         std::cout << " - value:" << std::setw(14) << std::fixed << std::setprecision(precision) << yyval_[iBin-1] << std::endl;
+        std::cout << "   errors:" << std::endl;
         std::cout << "   - {symerror:" << std::setw(14) << std::fixed << std::setprecision(precision) << yyErrTot_[iBin-1] << ", label: tot}" << std::endl;
         std::cout << "   - {symerror:" << std::setw(14) << std::fixed << std::setprecision(precision) << yyErrStat_[iBin-1] << ", label: stat}" << std::endl;
         std::cout << "   - {symerror:" << std::setw(14) << std::fixed << std::setprecision(precision) << yyErrSyst_[iBin-1] << ", label: syst}" << std::endl;

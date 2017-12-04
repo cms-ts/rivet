@@ -16,34 +16,42 @@ qualifiers:
 - {name: SQRT(S), units: GEV, value: 8000}
 values:
  - value:          1.96
+   errors:
    - {symerror:          0.18, label: tot}
    - {symerror:          0.06, label: stat}
    - {symerror:          0.17, label: syst}
  - value:          1.89
+   errors:
    - {symerror:          0.21, label: tot}
    - {symerror:          0.06, label: stat}
    - {symerror:          0.20, label: syst}
  - value:          1.85
+   errors:
    - {symerror:          0.14, label: tot}
    - {symerror:          0.06, label: stat}
    - {symerror:          0.12, label: syst}
  - value:          1.66
+   errors:
    - {symerror:          0.10, label: tot}
    - {symerror:          0.05, label: stat}
    - {symerror:          0.09, label: syst}
  - value:         1.428
+   errors:
    - {symerror:         0.097, label: tot}
    - {symerror:         0.054, label: stat}
    - {symerror:         0.081, label: syst}
  - value:         1.197
+   errors:
    - {symerror:         0.096, label: tot}
    - {symerror:         0.051, label: stat}
    - {symerror:         0.081, label: syst}
  - value:         0.948
+   errors:
    - {symerror:         0.097, label: tot}
    - {symerror:         0.046, label: stat}
    - {symerror:         0.085, label: syst}
  - value:         0.488
+   errors:
    - {symerror:         0.058, label: tot}
    - {symerror:         0.026, label: stat}
    - {symerror:         0.052, label: syst}

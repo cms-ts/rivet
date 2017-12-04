@@ -12,38 +12,46 @@ values:
 dependent_variables:
 - header: {name: D(SIG(fiducial))/DAZB, units: PB}
 qualifiers:
-- {name: RE, value: Dummy}
+- {name: RE, value: P P --> Z0 < LEPTON+ LEPTON- > + >= 2 B JETS}
 - {name: SQRT(S), units: GEV, value: 8000}
 values:
  - value:          1.31
+   errors:
    - {symerror:          0.20, label: tot}
    - {symerror:          0.09, label: stat}
    - {symerror:          0.18, label: syst}
  - value:          0.84
+   errors:
    - {symerror:          0.14, label: tot}
    - {symerror:          0.07, label: stat}
    - {symerror:          0.13, label: syst}
  - value:          0.45
+   errors:
    - {symerror:          0.10, label: tot}
    - {symerror:          0.05, label: stat}
    - {symerror:          0.09, label: syst}
  - value:         0.244
+   errors:
    - {symerror:         0.069, label: tot}
    - {symerror:         0.035, label: stat}
    - {symerror:         0.060, label: syst}
  - value:         0.150
+   errors:
    - {symerror:         0.058, label: tot}
    - {symerror:         0.022, label: stat}
    - {symerror:         0.054, label: syst}
  - value:         0.120
+   errors:
    - {symerror:         0.041, label: tot}
    - {symerror:         0.019, label: stat}
    - {symerror:         0.036, label: syst}
  - value:         0.082
+   errors:
    - {symerror:         0.030, label: tot}
    - {symerror:         0.013, label: stat}
    - {symerror:         0.027, label: syst}
  - value:         0.032
+   errors:
    - {symerror:         0.016, label: tot}
    - {symerror:         0.006, label: stat}
    - {symerror:         0.015, label: syst}

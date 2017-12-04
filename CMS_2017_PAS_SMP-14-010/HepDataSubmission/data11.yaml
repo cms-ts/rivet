@@ -20,50 +20,62 @@ qualifiers:
 - {name: SQRT(S), units: GEV, value: 8000}
 values:
  - value:        0.0043
+   errors:
    - {symerror:        0.0020, label: tot}
    - {symerror:        0.0006, label: stat}
    - {symerror:        0.0019, label: syst}
  - value:        0.0072
+   errors:
    - {symerror:        0.0016, label: tot}
    - {symerror:        0.0004, label: stat}
    - {symerror:        0.0016, label: syst}
  - value:        0.0043
+   errors:
    - {symerror:        0.0012, label: tot}
    - {symerror:        0.0004, label: stat}
    - {symerror:        0.0012, label: syst}
  - value:       0.00253
+   errors:
    - {symerror:       0.00067, label: tot}
    - {symerror:       0.00031, label: stat}
    - {symerror:       0.00059, label: syst}
  - value:        0.0017
+   errors:
    - {symerror:        0.0010, label: tot}
    - {symerror:        0.0002, label: stat}
    - {symerror:        0.0010, label: syst}
  - value:       0.00145
+   errors:
    - {symerror:       0.00031, label: tot}
    - {symerror:       0.00018, label: stat}
    - {symerror:       0.00025, label: syst}
  - value:       0.00083
+   errors:
    - {symerror:       0.00029, label: tot}
    - {symerror:       0.00014, label: stat}
    - {symerror:       0.00025, label: syst}
  - value:       0.00056
+   errors:
    - {symerror:       0.00025, label: tot}
    - {symerror:       0.00012, label: stat}
    - {symerror:       0.00022, label: syst}
  - value:       0.00046
+   errors:
    - {symerror:       0.00020, label: tot}
    - {symerror:       0.00011, label: stat}
    - {symerror:       0.00016, label: syst}
  - value:       0.00027
+   errors:
    - {symerror:       0.00013, label: tot}
    - {symerror:       0.00007, label: stat}
    - {symerror:       0.00011, label: syst}
  - value:       0.00024
+   errors:
    - {symerror:       0.00018, label: tot}
    - {symerror:       0.00007, label: stat}
    - {symerror:       0.00017, label: syst}
  - value:       0.00016
+   errors:
    - {symerror:       0.00015, label: tot}
    - {symerror:       0.00006, label: stat}
    - {symerror:       0.00014, label: syst}
